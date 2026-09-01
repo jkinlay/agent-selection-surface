@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(cs_z(add(add(add(cs_z(div(neg(ts_z(minr(10), 120)), std(60))), cs_z(div(neg(ts_z(minr(15), 120)), std(60)))), cs_z(div(neg(ts_z(ret(3), 120)), std(60)))), cs_z(div(neg(ts_z(ret(5), 120)), std(60))))), cs_z(div(neg(skew(20)), std(15))))",
+    "add(add(cs_z(add(cs_z(div(neg(ts_z(minr(10), 120)), std(60))), cs_z(div(neg(ts_z(minr(15), 120)), std(60))))), cs_z(add(cs_z(div(neg(ts_z(ret(3), 120)), std(60))), cs_z(div(neg(ts_z(ret(5), 120)), std(60)))))), cs_z(div(neg(skew(20)), std(15))))",
+    "add(add(add(add(add(add(cs_z(div(neg(ts_z(minr(10), 120)), std(60))), cs_z(div(neg(ts_z(minr(15), 120)), std(60)))), cs_z(div(neg(ts_z(ret(3), 120)), std(60)))), cs_z(div(neg(ts_z(ret(5), 120)), std(60)))), cs_z(div(neg(skew(20)), std(15)))), cs_z(div(neg(skew(20)), std(20)))), cs_z(div(neg(skew(20)), std(40))))"
+  ],
+  "chosen_sr_train": [
+    2.2419,
+    2.2225,
+    2.2215
+  ],
+  "rationale": "All three are vol scaled parameter ensembles blending two genuinely distinct effects found in this panel: short horizon cross sectional reversal, measured both point to point via ret(3) and ret(5) and path dependently via proximity to the rolling 10 and 15 day low, and the idiosyncratic negative skewness premium. Every leg is ts z scored over 120 days to strip each assets own drift and scale, then divided by trailing volatility to equalize risk contribution; removing the vol divisor costs 0.45 of train SR while the divisor itself is flat across std windows 5 to 120, so it is risk scaling rather than a fitted parameter. Leave one family out shows skew is the real diversifier, contributing 0.15 SR, while the two reversal measures are largely redundant with each other. I deliberately did not report the highest train SR expression. The composite region is a wide flat plateau with roughly forty parameterizations between 2.10 and 2.24 train SR, so differences of 0.05 are noise and the argmax is selection bias; instead each reported signal averages across the lookback and scaler choices I could have tuned, and the three differ only in family weighting, fifty fifty, equal thirds, and equal weight across seven legs. Train SR 2.24, 2.22 and 2.22 with rank IC near 0.0156. Supporting evidence the mechanism is real: SR decays from 1.94 to 0.48 at a three day delay and to 0.00 at five days, exactly the fast decay a liquidity provision reversal should show, and SR and IC agree in sign for every construction retained while momentum, which showed positive IC but negative SR, was rejected on that conflict.",
+  "n_batches_used": 11
+}

@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(ma(120), mul(delay(ts_z(delay(logret(3), 17), 60), 9), logret(5)))",
+    "add(ma(120), maxr(15))",
+    "add(ma(120), maxr(10))"
+  ],
+  "chosen_sr_train": [
+    1.3827,
+    1.2354,
+    1.1842
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-soft)",
+  "n_batches_used": 12
+}

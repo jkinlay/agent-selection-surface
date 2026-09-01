@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "cs_z(neg(minr(10)))",
+    "neg(minr(10))",
+    "cs_z(neg(minr(15)))"
+  ],
+  "chosen_sr_train": [
+    1.2772,
+    1.2772,
+    1.2132
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-hard)",
+  "n_batches_used": 12
+}

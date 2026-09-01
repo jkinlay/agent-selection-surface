@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(kurt(15), mul(ts_z(logret(40), 120), beta(40)))",
+    "add(kurt(15), mul(div(logret(20), ma(20)), beta(40)))",
+    "add(kurt(15), mul(div(logret(20), ma(20)), kurt(40)))"
+  ],
+  "chosen_sr_train": [
+    2.0374,
+    1.9143,
+    1.8578
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-medium)",
+  "n_batches_used": 12
+}

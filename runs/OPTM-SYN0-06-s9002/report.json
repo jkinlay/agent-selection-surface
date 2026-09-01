@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "div(sign(kurt(60)), kurt(15))",
+    "div(sign(sign(kurt(60))), kurt(15))",
+    "div(ma(40), kurt(15))"
+  ],
+  "chosen_sr_train": [
+    1.9433,
+    1.9433,
+    1.2814
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-medium)",
+  "n_batches_used": 12
+}

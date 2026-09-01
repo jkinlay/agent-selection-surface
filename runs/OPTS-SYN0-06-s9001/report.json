@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "delay(cs_rank(sub(std(3), add(kurt(20), skew(10)))), 15)",
+    "ma(250)",
+    "div(div(corrm(10), cs_z(ma(10))), std(20))"
+  ],
+  "chosen_sr_train": [
+    1.1684,
+    1.1193,
+    1.1081
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-soft)",
+  "n_batches_used": 12
+}

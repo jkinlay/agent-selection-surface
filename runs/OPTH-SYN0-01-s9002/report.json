@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "neg(delay(delay(std(20), 19), 19))",
+    "neg(delay(delay(std(40), 19), 19))",
+    "neg(delay(std(40), 19))"
+  ],
+  "chosen_sr_train": [
+    0.9309,
+    0.9295,
+    0.9091
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-hard)",
+  "n_batches_used": 12
+}

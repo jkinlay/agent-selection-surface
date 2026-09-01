@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "mul(div(neg(ts_z(minr(60), 60)), add(std(40), std(120))), add(corrm(60), corrm(120)))",
+    "sub(mul(div(neg(ts_z(minr(60), 60)), add(std(40), std(120))), add(corrm(60), corrm(120))), cs_z(skew(40)))",
+    "mul(div(neg(ts_z(minr(60), 60)), std(60)), add(corrm(60), corrm(120)))"
+  ],
+  "chosen_sr_train": [
+    2.8897,
+    2.8831,
+    2.8892
+  ],
+  "rationale": "All three are interior points of one broad, well-mapped ridge: reversal in the time-series z-score of position-versus-60-day-low, scaled by inverse volatility and weighted toward panel-correlated names. Each component was validated on its own before combining, and the ts_z step is load bearing - without it the signal scores SR 0.66 with a negative IC, so the alpha is in the deviation from each assets own norm rather than the raw level. The ridge holds at SR 2.85 to 2.93 across roughly 60 parameter cells spanning every vol denominator from std(5) to std(120) and both corrm windows, with SR and rank IC agreeing in sign throughout, and it survives an extra day of staleness. I avoided the single best cell (std(5) at 2.930, an axis corner and the most selection-inflated) in favour of forms that average over the vol and correlation lookbacks, so performance rests on a region rather than one parameter. Pick 2 overlays an independently validated low-skew tilt for a second anomaly axis and the highest rank IC in the study; pick 3 is the most parsimonious form, held as a hedge against the ensembling itself being fitted.",
+  "n_batches_used": 12
+}

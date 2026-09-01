@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "div(add(div(add(kurt(10), cs_rank(ma(15))), corrm(120)), cs_rank(ma(15))), corrm(3))",
+    "div(add(kurt(10), div(add(kurt(10), cs_rank(ma(15))), corrm(3))), corrm(3))",
+    "div(add(div(add(kurt(10), cs_rank(ma(15))), corrm(120)), cs_rank(div(add(kurt(10), cs_rank(ma(15))), corrm(120)))), corrm(3))"
+  ],
+  "chosen_sr_train": [
+    1.5744,
+    1.4885,
+    1.485
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-hard)",
+  "n_batches_used": 12
+}

@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(corrm(3), cs_z(abs_(ma(3))))",
+    "add(add(corrm(20), corrm(20)), delay(skew(60), 18))",
+    "add(add(delay(maxr(3), 19), corrm(20)), delay(skew(60), 18))"
+  ],
+  "chosen_sr_train": [
+    1.0362,
+    1.0,
+    0.9957
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-medium)",
+  "n_batches_used": 12
+}

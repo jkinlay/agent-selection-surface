@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(add(cs_rank(neg(div(delay(ret(60), 10), maxr(250)))), cs_rank(neg(div(delay(ret(40), 10), maxr(250))))), add(add(cs_rank(kurt(250)), cs_rank(delay(skew(250), 10))), add(cs_rank(neg(div(ret(5), std(250)))), cs_rank(skew(10)))))",
+    "add(add(cs_rank(neg(div(delay(ret(60), 10), maxr(250)))), cs_rank(neg(div(delay(ret(40), 10), maxr(250))))), add(add(cs_rank(kurt(250)), cs_rank(skew(250))), add(cs_rank(neg(div(ret(5), std(20)))), cs_rank(skew(10)))))",
+    "add(add(cs_rank(neg(mul(delay(ret(60), 10), std(250)))), cs_rank(neg(mul(delay(ret(40), 10), std(250))))), add(add(cs_rank(kurt(250)), cs_rank(skew(250))), add(cs_rank(neg(ret(5))), cs_rank(skew(10)))))"
+  ],
+  "chosen_sr_train": [
+    2.2839,
+    2.2042,
+    2.1546
+  ],
+  "rationale": "All three are equal weight cross sectional rank composites of the same six economically distinct blocks: intermediate horizon reversal at 40 and 60 days skipping the most recent 10 days, entered twice for horizon diversification, plus long run kurtosis, long run skew, 5 day short term reversal, and short run skew. The core reversal effect is corroborated by four independent encodings in the raw feature set: ret(40) through ret(250) all negatively predictive, ma(60) through ma(250) positively, and maxr and minr at 120 and 250 negatively, so it is a property of the panel rather than a fitted artifact. Each secondary block is independently predictive standalone at SR 0.34 to 0.77 with a monotone gradient in lookback, so the composite does not depend on any spurious interaction. Train SR for the three is 2.28, 2.20 and 2.16, but I did not select on rank within that band: every structural substitution I tested scored 2.06 to 2.28, so the composite sits on a wide plateau and the ordering inside it is noise. I therefore picked the top member of three different reversal encodings, maxr(250) scaled, a variant with a different short term reversal denominator, and volatility multiplied, so that no single arbitrary scaling choice is load bearing across all three. Additions with positive standalone scores but no supporting gradient, namely corrm, beta and the low volatility tilt, degraded the blend and were rejected.",
+  "n_batches_used": 12
+}

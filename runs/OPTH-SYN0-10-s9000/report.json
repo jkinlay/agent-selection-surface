@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "ts_z(kurt(120), 3)",
+    "sub(beta(60), ts_z(std(20), 60))",
+    "ts_z(delay(ts_z(kurt(3), 120), 5), 3)"
+  ],
+  "chosen_sr_train": [
+    0.9773,
+    0.8258,
+    0.8118
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-hard)",
+  "n_batches_used": 12
+}

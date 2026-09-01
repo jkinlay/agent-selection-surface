@@ -1,0 +1,17 @@
+{
+  "book_notional_usd": 100000000.0,
+  "target_vol": 0.1,
+  "usd_per_sharpe_unit": 10000000.0,
+  "face_is_sharpe": 3.1,
+  "syn0_measured_haircut_sharpe": 2.12,
+  "priced_sharpe_after_haircut": 0.98,
+  "overstatement_sharpe": 2.12,
+  "overstatement_usd_per_year": 21200000.0,
+  "overstatement_bps_of_notional": 2120.0,
+  "realized_oos_sharpe_one_draw": 0.72,
+  "realized_oos_block_bootstrap_95ci": [
+    -0.53,
+    1.99
+  ],
+  "label": "Selection-haircut arithmetic given the SYN-0 calibration. Gross of costs. Relative overstatement only \u2014 not a forecast, not strategy P&L."
+}

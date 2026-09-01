@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "sub(add(skew(60), std(250)), ts_z(minr(120), 10))",
+    "ts_z(beta(20), 60)",
+    "neg(add(maxr(60), skew(3)))"
+  ],
+  "chosen_sr_train": [
+    1.1514,
+    1.1426,
+    1.0069
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-soft)",
+  "n_batches_used": 12
+}

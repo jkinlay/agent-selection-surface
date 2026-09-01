@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "beta(3)",
+    "ts_z(beta(3), 120)",
+    "ts_z(beta(10), 120)"
+  ],
+  "chosen_sr_train": [
+    1.2396,
+    0.8941,
+    0.8799
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-hard)",
+  "n_batches_used": 12
+}

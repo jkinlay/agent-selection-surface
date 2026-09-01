@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "sub(ts_z(corrm(20), 60), sign(mul(corrm(20), corrm(5))))",
+    "neg(delay(ts_z(div(logret(40), std(5)), 5), 19))",
+    "neg(delay(ts_z(div(ret(40), std(5)), 5), 19))"
+  ],
+  "chosen_sr_train": [
+    1.8969,
+    1.4156,
+    1.4063
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-medium)",
+  "n_batches_used": 12
+}

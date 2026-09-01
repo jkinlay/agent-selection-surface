@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(sub(neg(kurt(60)), kurt(250)), sub(neg(ts_z(kurt(60), 120)), ts_z(ret(40), 120)))",
+    "add(cs_z(sub(neg(kurt(60)), kurt(250))), cs_z(sub(neg(ts_z(kurt(60), 120)), ts_z(ret(40), 120))))",
+    "add(cs_rank(sub(neg(kurt(60)), kurt(250))), cs_rank(sub(neg(ts_z(kurt(60), 120)), ts_z(ret(40), 120))))"
+  ],
+  "chosen_sr_train": [
+    2.0768,
+    2.0761,
+    2.0684
+  ],
+  "rationale": "Composite of a low-kurtosis premium (short long assets with high 60d and 250d return kurtosis, in level and own-history ts_z form) plus 40d reversal normalized by own 120d history. Family shows a broad flat train ridge near SR 2.0 across horizons, weights, and normalizations, with mild delay-3 decay (1.93), indicating genuine factors rather than a noise spike. The three picks are the same 4-component signal under raw, cs_z, and cs_rank combining conventions to hedge scale-convention risk out of sample.",
+  "n_batches_used": 9
+}

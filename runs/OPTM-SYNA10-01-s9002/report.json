@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(add(kurt(15), ts_z(kurt(250), 60)), add(cs_rank(div(abs_(ts_z(skew(250), 5)), std(250))), ret(10)))",
+    "add(kurt(15), add(cs_rank(div(abs_(ts_z(skew(250), 5)), std(250))), ret(10)))",
+    "add(kurt(15), add(cs_rank(div(abs_(ts_z(skew(250), 5)), delay(add(minr(20), ret(10)), 16))), ret(10)))"
+  ],
+  "chosen_sr_train": [
+    1.5839,
+    1.5757,
+    1.5575
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-medium)",
+  "n_batches_used": 12
+}

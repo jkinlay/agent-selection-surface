@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(add(add(cs_z(ma(3)), cs_z(neg(ret(5)))), cs_z(std(10))), add(cs_z(skew(120)), cs_z(skew(120))))",
+    "add(add(cs_z(ma(3)), cs_z(std(10))), cs_z(skew(120)))",
+    "add(add(add(cs_z(ma(3)), cs_z(neg(ret(5)))), cs_z(std(20))), cs_z(skew(120)))"
+  ],
+  "chosen_sr_train": [
+    1.3503,
+    1.3046,
+    1.2555
+  ],
+  "rationale": "Panel is driven by three additive cross-sectional effects: short-horizon mean reversion (price below its 3-5d MA outperforms; ret(5) SR -0.90 standalone), a short-lookback volatility premium (std(10)-std(20) positive), and positive medium-lookback skewness (skew(120), positive across 40-120d lookbacks). Equal-weight cs_z composites of these legs form a broad stable plateau (train SR 1.1-1.35, IC ~0.006-0.007 across ~40 parameterizations), indicating the edge is structural rather than a tuning artifact. The three picks are plateau variants differing only in vol lookback (10 vs 20) and skew weight (1x vs 2x) to hedge parameter-selection risk.",
+  "n_batches_used": 6
+}

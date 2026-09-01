@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(cs_z(add(add(cs_z(div(sub(ret(10), ret(3)), std(40))), cs_z(div(delay(ret(10), 3), std(40)))), cs_z(div(sub(ret(15), ret(3)), std(40))))), cs_z(add(cs_z(neg(skew(10))), cs_z(neg(skew(15))))))",
+    "add(cs_z(add(cs_z(div(sub(ret(10), ret(3)), std(40))), cs_z(div(delay(ret(10), 3), std(40))))), cs_z(add(cs_z(neg(skew(10))), cs_z(neg(skew(15))))))",
+    "add(cs_rank(add(cs_rank(div(sub(ret(10), ret(3)), std(40))), cs_rank(div(delay(ret(10), 3), std(40))))), cs_rank(add(cs_rank(neg(skew(10))), cs_rank(neg(skew(15))))))"
+  ],
+  "chosen_sr_train": [
+    1.8715,
+    1.8393,
+    1.8375
+  ],
+  "rationale": "Two robust families found via broad screen then neighborhood mapping: vol-scaled momentum over t-10..t-3 skipping the 3-day reversal window, and a negative short-horizon skewness premium (10-15d). Each is stable across adjacent lookbacks, both signs and magnitudes replicate under parameter perturbation, and the 1:1 normalized combination survives 3-5 day trade delays (SR 1.13-1.23 delayed vs 1.84-1.87 fresh), arguing genuine persistent structure. The three reported signals are construction-diverse blends of the same validated composite: triple-window z blend, double-window z blend, and a rank-normalized version for outlier robustness; parameter blending trades peak train SR for lower estimation variance to maximize expected OOS Sharpe.",
+  "n_batches_used": 6
+}

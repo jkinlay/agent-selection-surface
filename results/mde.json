@@ -1,0 +1,75 @@
+{
+  "SYN0:AGENT": {
+    "n_panels": 12,
+    "mean_decay": 1.628,
+    "sd_across_panels": 1.457,
+    "se": 0.421
+  },
+  "SYN0:CANON-SAMPLER": {
+    "n_panels": 12,
+    "mean_decay": 1.468,
+    "sd_across_panels": 1.016,
+    "se": 0.293
+  },
+  "SYN0:OPT-hard": {
+    "n_panels": 12,
+    "mean_decay": 1.195,
+    "sd_across_panels": 0.853,
+    "se": 0.246
+  },
+  "SYN0:OPT-medium": {
+    "n_panels": 12,
+    "mean_decay": 1.419,
+    "sd_across_panels": 0.817,
+    "se": 0.236
+  },
+  "SYN0:OPT-soft": {
+    "n_panels": 12,
+    "mean_decay": 1.505,
+    "sd_across_panels": 0.931,
+    "se": 0.269
+  },
+  "SYNA05:AGENT": {
+    "n_panels": 4,
+    "mean_decay": 3.029,
+    "sd_across_panels": 0.794,
+    "se": 0.397
+  },
+  "SYNA05:CANON-SAMPLER": {
+    "n_panels": 4,
+    "mean_decay": 1.543,
+    "sd_across_panels": 0.868,
+    "se": 0.434
+  },
+  "SYNA05:OPT-medium": {
+    "n_panels": 4,
+    "mean_decay": 1.355,
+    "sd_across_panels": 0.967,
+    "se": 0.483
+  },
+  "SYNA10:AGENT": {
+    "n_panels": 4,
+    "mean_decay": 2.378,
+    "sd_across_panels": 1.943,
+    "se": 0.972
+  },
+  "SYNA10:CANON-SAMPLER": {
+    "n_panels": 4,
+    "mean_decay": 2.279,
+    "sd_across_panels": 1.233,
+    "se": 0.616
+  },
+  "SYNA10:OPT-medium": {
+    "n_panels": 4,
+    "mean_decay": 0.802,
+    "sd_across_panels": 0.941,
+    "se": 0.47
+  },
+  "paired_AGENT_minus_OPTmedium_SYN0": {
+    "n_panels": 12,
+    "mean_diff": 0.209,
+    "se": 0.329,
+    "t": 0.64,
+    "mde_80pct_power": 0.92
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(add(add(add(add(add(cs_z(neg(sub(ret(250), ret(40)))), cs_z(neg(sub(ret(250), ret(40))))), cs_z(neg(ts_z(ret(3), 20)))), cs_z(sub(std(60), std(10)))), cs_z(delay(skew(250), 20))), cs_z(delay(skew(250), 20))), cs_z(delay(skew(250), 20)))",
+    "add(add(add(add(add(cs_z(neg(sub(ret(250), ret(40)))), cs_z(neg(sub(ret(250), ret(40))))), cs_z(neg(ts_z(ret(3), 20)))), cs_z(sub(std(40), std(10)))), cs_z(delay(skew(250), 20))), cs_z(delay(skew(250), 20)))",
+    "add(add(add(add(add(add(cs_z(neg(ret(250))), cs_z(neg(ret(250)))), cs_z(ret(40))), cs_z(neg(ts_z(ret(3), 20)))), cs_z(sub(std(60), std(10)))), cs_z(delay(skew(250), 20))), cs_z(delay(skew(250), 20)))"
+  ],
+  "chosen_sr_train": [
+    2.0236,
+    2.0179,
+    1.9427
+  ],
+  "rationale": "All three are cs_z-weighted composites of four independently validated effects: 250d long-term reversal net of 40d momentum (2x weight), 3d short-term reversal z-scored over 20d, vol term structure long low recent 10d vol vs 40-60d vol, and persistent positive 250d skewness taken with a 20d delay (2-3x weight). Each leg was separately confirmed with positive standalone SR, neighbor-lookback consistency, and delay persistence; the composite family scores train SR 1.9-2.0 with IC near 0.010 and varies less than 0.15 SR across some 25 structural perturbations. The three picks vary the implementation of each leg (vol leg at 40 vs 60d, reversal core as ret250 minus ret40 vs separate reversal and momentum legs, skew weight 2x vs 3x) to hedge specification risk while staying inside the strongest validated family.",
+  "n_batches_used": 9
+}

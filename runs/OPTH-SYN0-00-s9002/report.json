@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "mul(add(sub(add(ma(120), mul(ret(250), std(5))), sign(std(5))), maxr(20)), delay(add(ma(120), mul(ret(250), std(5))), 12))",
+    "mul(add(sub(add(ma(120), mul(ret(250), std(5))), sign(minr(15))), maxr(20)), delay(add(ma(120), mul(ret(250), std(5))), 12))",
+    "mul(add(sub(add(ma(120), mul(ret(250), std(5))), sign(std(3))), maxr(20)), delay(add(ma(120), mul(ret(250), std(5))), 12))"
+  ],
+  "chosen_sr_train": [
+    1.9467,
+    1.9467,
+    1.9467
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-hard)",
+  "n_batches_used": 12
+}

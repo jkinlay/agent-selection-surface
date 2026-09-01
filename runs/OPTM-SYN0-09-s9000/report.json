@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "cs_rank(add(corrm(10), mul(skew(250), cs_z(corrm(60)))))",
+    "cs_rank(add(corrm(10), ma(250)))",
+    "cs_rank(add(corrm(10), mul(skew(40), cs_z(corrm(60)))))"
+  ],
+  "chosen_sr_train": [
+    1.4316,
+    1.239,
+    1.2064
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-medium)",
+  "n_batches_used": 12
+}

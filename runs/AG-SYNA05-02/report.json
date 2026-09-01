@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "delay(add(add(add(cs_z(ts_z(kurt(10),250)),neg(cs_z(ts_z(skew(20),250)))),add(neg(cs_z(ts_z(skew(60),250))),neg(cs_z(ts_z(corrm(40),250))))),neg(cs_z(ts_z(std(20),250)))),3)",
+    "delay(add(add(add(cs_z(ts_z(kurt(10),250)),neg(cs_z(ts_z(skew(20),250)))),add(neg(cs_z(ts_z(skew(60),250))),neg(cs_z(ts_z(corrm(40),250))))),add(neg(cs_z(ts_z(std(20),250))),cs_z(ts_z(maxr(60),250)))),3)",
+    "delay(add(add(add(cs_z(ts_z(kurt(10),250)),neg(cs_z(ts_z(skew(20),250)))),add(add(neg(cs_z(ts_z(skew(40),250))),neg(cs_z(ts_z(skew(60),250)))),neg(cs_z(ts_z(corrm(40),250))))),add(neg(cs_z(ts_z(std(20),250))),cs_z(ts_z(maxr(60),250)))),3)"
+  ],
+  "chosen_sr_train": [
+    2.6071,
+    2.4621,
+    2.4738
+  ],
+  "rationale": "All three are equal weighted composites of five sign coherent orthogonal families, each component time series z scored over 250 days then cross sectionally z scored, with a 3 day delay. Economic content: long high kurtosis, low skew (lottery preference), low market correlation, low volatility, and near rolling high (momentum). Key insight was that ts_z normalization strips each asset persistent level of a characteristic and isolates the predictive time varying deviation, which turned skew from a sign unstable family into one that is negative at every lookback from 10 to 120, and likewise made kurt, maxr, corrm and std sign coherent across their whole term structures. Combination is strongly additive rather than redundant, verified by the mul and abs_ tests showing skew acts as a signed lottery effect and kurt is not a proxy for absolute skew. Robustness was established three ways: one notch lookback perturbations in both directions all land between SR 1.6 and 2.2 with no cliff, indicating a plateau not a spike; leave one out shows dropping any single component still leaves SR between 2.18 and 2.51 so no term dominates; and the signal survives 3, 5 and 10 day extra lag, confirming a slow moving edge rather than a one day microstructure artifact. The delay 3 hump replicated across roughly ten independent composites. Pick 1 has the highest train SR at 2.607, pick 2 has the highest rank IC of the entire study at 0.0141 and adds maxr which was the single most sign stable family, and pick 3 uses the full contiguous skew block of 20, 40 and 60 to minimize skew lookback selection bias. The three share a common robust core but differ in horizons and families so specification error partially diversifies.",
+  "n_batches_used": 11
+}

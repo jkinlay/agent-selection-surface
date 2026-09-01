@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "delay(ret(15), 12)",
+    "mul(delay(ret(15), 12), minr(20))",
+    "mul(kurt(15), maxr(10))"
+  ],
+  "chosen_sr_train": [
+    1.879,
+    1.8626,
+    1.7458
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-medium)",
+  "n_batches_used": 12
+}

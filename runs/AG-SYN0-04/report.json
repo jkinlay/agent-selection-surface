@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(add(add(cs_z(ret(120)), cs_z(delay(ret(60), 10))), add(cs_z(ma(3)), cs_z(neg(minr(3))))), cs_z(kurt(120)))",
+    "add(add(cs_z(delay(ret(60), 10)), cs_z(neg(minr(3)))), cs_z(kurt(120)))",
+    "add(add(add(cs_z(sub(ret(120), ret(10))), cs_z(delay(ret(60), 10))), add(cs_z(ma(3)), cs_z(neg(minr(3))))), cs_z(kurt(120)))"
+  ],
+  "chosen_sr_train": [
+    1.6767,
+    1.678,
+    1.6746
+  ],
+  "rationale": "All three sit on a broad stable plateau (train SR 1.45-1.70 across ~25 variants) combining three independently validated families: intermediate momentum (ret 60-120d, strongest with a 10-20d gap, standalone SR 0.7-1.1), short-term 3d reversal (via price-to-3d-min and MA3-to-price, standalone SR 0.7-1.0), and high return kurtosis over 60-120d (standalone SR 0.4-0.7). Equal-weight cs_z sums of validated blocks were preferred over the single argmax expression to limit selection overfit, and the three picks vary block definitions and weights to hedge parameterization risk.",
+  "n_batches_used": 6
+}

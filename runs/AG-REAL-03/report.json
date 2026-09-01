@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "neg(div(add(add(ts_z(minr(60),60), ts_z(minr(60),120)), ts_z(minr(10),120)), std(40)))",
+    "neg(div(add(add(ts_z(minr(60),60), ts_z(minr(60),120)), ts_z(ret(5),120)), std(40)))",
+    "neg(div(add(add(ts_z(minr(60),60), ts_z(minr(60),120)), ts_z(minr(10),120)), add(std(40), std(120))))"
+  ],
+  "chosen_sr_train": [
+    2.7167,
+    2.7194,
+    2.6933
+  ],
+  "rationale": "Volatility scaled range position reversal. Core carrier is ts_z(minr(60)) capturing how stretched a name is above its rolling 60 day low relative to its own history, averaged over two z windows for stability, augmented with a short horizon reversal term and divided by trailing return volatility so position size scales inversely with risk. Train Sharpes 2.72, 2.72 and 2.69 with rank IC near 0.016. Selected for plateau centrality rather than argmax: the whole surrounding parameter region scores 2.4 to 2.7, swapping the short horizon carrier between minr(10) and ret(5) leaves the score unchanged, and the effect decays monotonically under delay, all consistent with a genuine short horizon mean reversion premium. The three picks differ along the carrier axis and the volatility window axis so no single parameter choice drives all of them.",
+  "n_batches_used": 12
+}

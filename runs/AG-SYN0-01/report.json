@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "delay(add(add(add(cs_rank(skew(120)), cs_rank(skew(250))), cs_rank(neg(minr(250)))), cs_rank(neg(std(60)))), 3)",
+    "delay(add(cs_rank(skew(120)), cs_rank(neg(minr(250)))), 3)",
+    "delay(add(add(add(cs_rank(skew(120)), cs_rank(skew(250))), add(cs_rank(neg(minr(250))), cs_rank(neg(minr(120))))), cs_rank(neg(std(60)))), 3)"
+  ],
+  "chosen_sr_train": [
+    1.8656,
+    1.8544,
+    1.8319
+  ],
+  "rationale": "Core effect: long-horizon return skewness (120-250d) plus proximity to long-term lows (neg minr) with low-vol tilt, rank-combined and delayed 3 days. Train SR 1.83-1.87 for the three picks; the family is robust across about 30 perturbations of horizon, weighting scheme, delay and leg composition (SR 1.4-1.87 throughout), while each leg is individually positive. Three variants at different diversification levels (lean 2-leg, 4-leg, horizon-averaged 5-leg) hedge specification risk while riding the same validated effect.",
+  "n_batches_used": 7
+}

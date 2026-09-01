@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(add(cs_z(div(neg(kurt(250)), std(250))), cs_z(div(neg(ts_z(minr(10), 250)), std(60)))), cs_z(div(neg(ts_z(skew(60), 120)), std(60))))",
+    "add(add(cs_z(div(neg(kurt(250)), std(250))), cs_z(div(neg(ts_z(minr(15), 250)), std(60)))), cs_z(neg(ts_z(skew(60), 120))))",
+    "add(cs_z(div(neg(ts_z(minr(10), 120)), std(60))), cs_z(div(neg(ts_z(skew(60), 120)), std(60))))"
+  ],
+  "chosen_sr_train": [
+    2.9684,
+    2.8065,
+    2.4571
+  ],
+  "rationale": "All three are equal-weight cross-sectional z-score blends of economically distinct legs with NO fitted weights, chosen from plateaus rather than peaks. The three underlying effects, each isolated in the unbiased baseline sweep before any optimization: (1) short-horizon reversal, expressed as distance above the rolling low, time-series z-scored per asset then divided by trailing vol; (2) a low-tail-risk-per-unit-volatility characteristic, kurtosis relative to trailing vol; (3) a negative-skew premium measured as a deviation from each asset own skew history. Two enhancements generalized across the entire parameter grid rather than at isolated points and are applied throughout: time-series z-scoring the raw feature, and dividing signed signals by trailing volatility. Robustness evidence: perturbing any single leg of the winning blend (skew window, reversal lookback, z-score window, vol denominator) leaves train SR in 2.65-2.97, and the two-leg surface spans 2.35-2.65 across every parameterization tested, so this is a broad region and not a fitted point. Falsification checks passed: the reversal component decays to SR 0.0-0.3 under a 5-day delay, exactly the profile a genuine short-horizon reversal must show and inconsistent with a look-ahead artifact, while the kurtosis characteristic survives a 20-day delay as a slow characteristic should. All three carry rank IC near +0.015 with SR and IC agreeing in sign, indicating broad cross-sectional breadth rather than a handful of lucky days. The third expression deliberately omits the kurtosis-per-vol leg, sacrificing about 0.5 of train SR to hedge the main regime risk in the other two, namely their net long high-volatility tilt whose near-zero standalone IC means its edge is tail concentrated.",
+  "n_batches_used": 12
+}

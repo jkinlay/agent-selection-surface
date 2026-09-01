@@ -1,0 +1,74 @@
+[
+  {
+    "panel": "SYN0-00",
+    "seed": 8000,
+    "kappa_rev": 0.0,
+    "kappa_anti": 0.0
+  },
+  {
+    "panel": "SYN0-01",
+    "seed": 8001,
+    "kappa_rev": 0.0,
+    "kappa_anti": 0.0
+  },
+  {
+    "panel": "SYN0-02",
+    "seed": 8002,
+    "kappa_rev": 0.0,
+    "kappa_anti": 0.0
+  },
+  {
+    "panel": "SYN0-03",
+    "seed": 8003,
+    "kappa_rev": 0.0,
+    "kappa_anti": 0.0
+  },
+  {
+    "panel": "SYN0-04",
+    "seed": 8004,
+    "kappa_rev": 0.0,
+    "kappa_anti": 0.0
+  },
+  {
+    "panel": "SYN0-05",
+    "seed": 8005,
+    "kappa_rev": 0.0,
+    "kappa_anti": 0.0
+  },
+  {
+    "panel": "SYN0-06",
+    "seed": 8006,
+    "kappa_rev": 0.0,
+    "kappa_anti": 0.0
+  },
+  {
+    "panel": "SYN0-07",
+    "seed": 8007,
+    "kappa_rev": 0.0,
+    "kappa_anti": 0.0
+  },
+  {
+    "panel": "SYN0-08",
+    "seed": 8008,
+    "kappa_rev": 0.0,
+    "kappa_anti": 0.0
+  },
+  {
+    "panel": "SYN0-09",
+    "seed": 8009,
+    "kappa_rev": 0.0,
+    "kappa_anti": 0.0
+  },
+  {
+    "panel": "SYN0-10",
+    "seed": 8010,
+    "kappa_rev": 0.0,
+    "kappa_anti": 0.0
+  },
+  {
+    "panel": "SYN0-11",
+    "seed": 8011,
+    "kappa_rev": 0.0,
+    "kappa_anti": 0.0
+  }
+]

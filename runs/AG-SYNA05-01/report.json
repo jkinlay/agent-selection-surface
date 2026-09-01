@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(add(add(cs_z(std(250)), cs_z(beta(250))), add(cs_z(neg(div(ret(10), std(60)))), cs_z(skew(20)))), add(add(cs_z(kurt(120)), cs_z(ts_z(std(120), 250))), add(add(cs_z(neg(maxr(120))), cs_z(ret(250))), add(cs_z(kurt(60)), add(add(add(add(cs_z(neg(maxr(15))), cs_z(skew(15))), cs_z(kurt(20))), cs_z(skew(5))), cs_z(abs_(ret(20))))))))",
+    "add(add(add(cs_z(std(250)), cs_z(beta(250))), add(cs_z(neg(div(ret(10), std(60)))), cs_z(skew(20)))), add(add(cs_z(kurt(120)), cs_z(ts_z(std(120), 250))), add(add(cs_z(neg(maxr(120))), cs_z(ret(250))), add(cs_z(kurt(60)), add(add(add(add(add(cs_z(neg(maxr(15))), cs_z(skew(15))), cs_z(kurt(20))), cs_z(skew(5))), cs_z(abs_(ret(20)))), cs_z(minr(250)))))))",
+    "add(add(add(cs_z(std(250)), cs_z(beta(250))), add(cs_z(neg(ret(10))), cs_z(skew(20)))), add(add(cs_z(kurt(120)), cs_z(ts_z(std(120), 250))), add(add(cs_z(neg(maxr(120))), cs_z(ret(250))), add(cs_z(kurt(60)), add(add(add(add(cs_z(neg(maxr(15))), cs_z(skew(15))), cs_z(kurt(20))), cs_z(skew(5))), cs_z(abs_(ret(20))))))))"
+  ],
+  "chosen_sr_train": [
+    2.6901,
+    2.6779,
+    2.6804
+  ],
+  "rationale": "Three wide equal-weight cross-sectional z-score ensembles spanning five independent blocks found in the panel: long-horizon volatility and beta risk premium, short-horizon reversal, short-window return skewness, kurtosis and vol expansion, and long-horizon momentum with range position. Train SR 2.69, 2.68 and 2.68 with rank IC 0.0166, 0.0172 and 0.0165. Selection was driven by robustness rather than by the raw train argmax: every base block has a smooth monotone or broad lookback term structure, leave-one-out moves SR only within 2.55 to 2.73 so no single leg carries the result, and swapping an arbitrary marginal leg spans plus or minus 0.15, meaning ranking inside the plateau is noise. I picked points strong on both SR and IC, favouring IC on ties since Sharpe earned through low realised volatility rather than prediction is less likely to persist. The three vary the reversal construction, which leave-one-out flagged as the highest attribution block, and vary ensemble breadth, so no single parameter choice can take down all three.",
+  "n_batches_used": 11
+}

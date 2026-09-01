@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "ma(60)",
+    "ma(40)",
+    "sign(skew(250))"
+  ],
+  "chosen_sr_train": [
+    0.8347,
+    0.7539,
+    0.748
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-hard)",
+  "n_batches_used": 12
+}

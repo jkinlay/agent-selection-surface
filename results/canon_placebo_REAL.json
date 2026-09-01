@@ -1,0 +1,98 @@
+[
+  {
+    "name": "mom_12_1",
+    "expr": "sub(ret(250), ret(20))",
+    "sr_train": -0.203,
+    "sr_oos": 0.79,
+    "ic_train": 0.01543,
+    "ic_oos": 0.0322
+  },
+  {
+    "name": "str_1m",
+    "expr": "neg(ret(20))",
+    "sr_train": 0.5924,
+    "sr_oos": 0.1418,
+    "ic_train": 0.00037,
+    "ic_oos": -0.00911
+  },
+  {
+    "name": "str_1w",
+    "expr": "neg(ret(5))",
+    "sr_train": 1.1941,
+    "sr_oos": 1.088,
+    "ic_train": 0.00727,
+    "ic_oos": 0.00301
+  },
+  {
+    "name": "lowvol_60",
+    "expr": "neg(std(60))",
+    "sr_train": -0.4151,
+    "sr_oos": 0.5877,
+    "ic_train": 0.02171,
+    "ic_oos": 0.03646
+  },
+  {
+    "name": "lowvol_20",
+    "expr": "neg(std(20))",
+    "sr_train": -0.2768,
+    "sr_oos": 0.6506,
+    "ic_train": 0.02138,
+    "ic_oos": 0.0365
+  },
+  {
+    "name": "bab_120",
+    "expr": "neg(beta(120))",
+    "sr_train": -0.3215,
+    "sr_oos": 0.2628,
+    "ic_train": 0.00272,
+    "ic_oos": 0.02273
+  },
+  {
+    "name": "high_52w",
+    "expr": "maxr(250)",
+    "sr_train": -0.5911,
+    "sr_oos": 0.442,
+    "ic_train": 0.02009,
+    "ic_oos": 0.03517
+  },
+  {
+    "name": "iskew_120",
+    "expr": "neg(skew(120))",
+    "sr_train": 0.1365,
+    "sr_oos": 1.0469,
+    "ic_train": 0.00934,
+    "ic_oos": 0.00635
+  },
+  {
+    "name": "iskew_60",
+    "expr": "neg(skew(60))",
+    "sr_train": 0.6268,
+    "sr_oos": 0.6058,
+    "ic_train": 0.01188,
+    "ic_oos": 0.00578
+  },
+  {
+    "name": "trend_120",
+    "expr": "logret(120)",
+    "sr_train": -0.2012,
+    "sr_oos": 0.1858,
+    "ic_train": 0.0138,
+    "ic_oos": 0.02481
+  },
+  {
+    "name": "int_mom",
+    "expr": "sub(ret(250), ret(120))",
+    "sr_train": -0.3634,
+    "sr_oos": 1.0138,
+    "ic_train": 0.00886,
+    "ic_oos": 0.02097
+  },
+  {
+    "name": "mom_accel",
+    "expr": "sub(ret(60), ret(120))",
+    "sr_train": -0.2917,
+    "sr_oos": -1.1118,
+    "ic_train": -0.01317,
+    "ic_oos": -0.0237
+  }
+]

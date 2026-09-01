@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(ts_z(std(40), 250), mul(beta(15), add(ts_z(delay(ret(20), 7), 40), corrm(60))))",
+    "add(ts_z(std(40), 250), mul(beta(15), add(ts_z(delay(ret(20), 7), 40), kurt(60))))",
+    "add(ts_z(delay(add(ts_z(delay(ret(20), 7), 40), kurt(60)), 7), 40), kurt(60))"
+  ],
+  "chosen_sr_train": [
+    2.0277,
+    1.9605,
+    1.6721
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-hard)",
+  "n_batches_used": 12
+}

@@ -1,0 +1,82 @@
+{
+  "composite_sr_is": -0.10733232343314648,
+  "composite_sr_oos": 0.8108582668065576,
+  "individual_mean_train": -0.02693790582704279,
+  "individual_mean_oos": 0.47528721555945935,
+  "individual_oos_se": 0.17214926319159524,
+  "individual": [
+    {
+      "name": "mom_12_1",
+      "expr": "sub(ret(250), ret(20))",
+      "sr_train": -0.23438293635393917,
+      "sr_oos": 0.7900403632550528
+    },
+    {
+      "name": "str_1m",
+      "expr": "neg(ret(20))",
+      "sr_train": 0.5989533527810091,
+      "sr_oos": 0.14177707201181827
+    },
+    {
+      "name": "str_1w",
+      "expr": "neg(ret(5))",
+      "sr_train": 1.1982571805118798,
+      "sr_oos": 1.088016081033912
+    },
+    {
+      "name": "lowvol_60",
+      "expr": "neg(std(60))",
+      "sr_train": -0.42848246957757935,
+      "sr_oos": 0.5877489197074073
+    },
+    {
+      "name": "lowvol_20",
+      "expr": "neg(std(20))",
+      "sr_train": -0.27986806832195266,
+      "sr_oos": 0.6505714249802732
+    },
+    {
+      "name": "bab_120",
+      "expr": "neg(beta(120))",
+      "sr_train": -0.3429370527317527,
+      "sr_oos": 0.2628326942051447
+    },
+    {
+      "name": "high_52w",
+      "expr": "maxr(250)",
+      "sr_train": -0.6821502978883747,
+      "sr_oos": 0.4420379330908891
+    },
+    {
+      "name": "iskew_120",
+      "expr": "neg(skew(120))",
+      "sr_train": 0.14558831390719026,
+      "sr_oos": 1.0468851460613982
+    },
+    {
+      "name": "iskew_60",
+      "expr": "neg(skew(60))",
+      "sr_train": 0.6470116034292708,
+      "sr_oos": 0.6058292546922277
+    },
+    {
+      "name": "trend_120",
+      "expr": "logret(120)",
+      "sr_train": -0.21456501388800067,
+      "sr_oos": 0.18575105789588367
+    },
+    {
+      "name": "int_mom",
+      "expr": "sub(ret(250), ret(120))",
+      "sr_train": -0.4196037998241109,
+      "sr_oos": 1.0137865324078517
+    },
+    {
+      "name": "mom_accel",
+      "expr": "sub(ret(60), ret(120))",
+      "sr_train": -0.3110756819681535,
+      "sr_oos": -1.1118298926283463
+    }
+  ],
+  "turnover": 0.135692296393917
+}

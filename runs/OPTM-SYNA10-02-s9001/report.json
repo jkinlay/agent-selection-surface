@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "kurt(15)",
+    "cs_rank(kurt(15))",
+    "div(div(std(120), add(kurt(20), skew(10))), abs_(std(120)))"
+  ],
+  "chosen_sr_train": [
+    1.7401,
+    1.7401,
+    1.671
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-medium)",
+  "n_batches_used": 12
+}

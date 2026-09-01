@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(add(neg(cs_rank(delay(minr(250), 3))), neg(cs_rank(beta(60)))), cs_rank(minr(3)))",
+    "add(add(neg(cs_rank(delay(minr(250), 10))), neg(cs_rank(beta(60)))), cs_rank(minr(3)))",
+    "add(add(add(add(neg(cs_rank(delay(minr(250), 3))), neg(cs_rank(beta(60)))), cs_rank(minr(3))), neg(cs_rank(corrm(60)))), neg(cs_rank(std(250))))"
+  ],
+  "chosen_sr_train": [
+    1.9783,
+    1.9216,
+    1.8409
+  ],
+  "rationale": "All three are equal weight cross sectional rank composites of the same architecture: slow reversal (buy assets near their 250 day low), betting against beta at a 60 day window, and fast 3 day range continuation. The sleeves score about 0.9, 0.8 and 0.5 SR alone but 1.98 combined, so near zero cross sleeve PnL correlation is doing the work rather than any single strong predictor. The slow delay dimension is a flat plateau, SR 1.86 to 1.98 and IC 0.0132 to 0.0140 across delays 0 to 20, and the sign flip between the slow and fast range sleeves is confirmed by four independent constructions of the 3 day continuation effect. I rejected a kurt(20) tilt that reached train SR 1.84 because it carried no standalone rank IC and degraded two other cores, so it was a train specific variance effect. Pick one is the plateau best on both SR and IC. Pick two is the same architecture at a different mid plateau delay so the set does not depend on one delay setting. Pick three adds low volatility and low panel correlation sleeves for a lower train SR but joint best IC and the widest family diversification, as a hedge against any single sleeve decaying.",
+  "n_batches_used": 12
+}

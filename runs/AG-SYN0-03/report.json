@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(add(sub(cs_z(skew(20)), cs_z(skew(120))), sub(cs_z(skew(20)), cs_z(skew(120)))), add(sub(cs_z(skew(20)), cs_z(skew(120))), add(sub(cs_z(std(5)), cs_z(std(40))), neg(cs_z(corrm(250))))))",
+    "add(add(add(sub(cs_z(skew(20)), cs_z(skew(120))), sub(cs_z(skew(15)), cs_z(skew(120)))), add(sub(cs_z(skew(20)), cs_z(skew(120))), sub(cs_z(skew(15)), cs_z(skew(120))))), add(sub(cs_z(std(5)), cs_z(std(40))), neg(cs_z(corrm(250)))))",
+    "add(add(sub(cs_z(skew(20)), cs_z(skew(120))), sub(cs_z(skew(20)), cs_z(skew(120)))), add(sub(cs_z(skew(20)), cs_z(skew(120))), add(sub(cs_z(std(5)), cs_z(std(40))), add(neg(cs_z(corrm(250))), neg(ts_z(std(20), 250))))))"
+  ],
+  "chosen_sr_train": [
+    2.0693,
+    2.0383,
+    2.0486
+  ],
+  "rationale": "Three mid-plateau composites of four independently validated mechanisms: short-minus-long skew term structure (positive at 5-20d, negative at 120d, robust across leg choices and extra lag), low correlation to the panel (coherent negative sign across 15-250d for both beta and corrm, minimal decay), short-over-long vol term structure, and vol-shock reversal via ts_z of std. Weight surface is flat near 3:1 spread-to-defensive (train SR 1.9-2.07 across variants), so picks differ in skew legs and vol components to hedge parameter-selection risk rather than chase the single train max.",
+  "n_batches_used": 7
+}

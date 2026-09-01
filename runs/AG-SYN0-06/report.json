@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "neg(add(cs_rank(ret(20)), cs_rank(div(ret(250), std(250)))))",
+    "neg(add(add(cs_rank(ret(3)), cs_rank(ret(20))), add(cs_rank(div(ret(250), std(250))), cs_rank(minr(250)))))",
+    "neg(add(cs_rank(ret(20)), cs_rank(ret(250))))"
+  ],
+  "chosen_sr_train": [
+    1.5318,
+    1.504,
+    1.4517
+  ],
+  "rationale": "Panel exhibits robust cross-sectional mean reversion at every horizon while all other feature families (vol, skew, kurt, beta, corrm) are dead. All three picks are multi-horizon reversal blends from a dense cluster of 10+ construction variants scoring SR 1.40-1.53 in train with IC ~0.010: (1) rank-blend of 20d reversal with vol-scaled 250d reversal (train SR 1.53); (2) a 4-leg rank ensemble adding ret(3) and minr(250) legs (SR 1.50) expected to shrink least out of sample; (3) the parsimonious core pair of 20d and 250d reversal (SR 1.45) as a minimal-fitting anchor. Family robustness: parameter neighbors consistent, z vs rank construction consistent, and delay(3) retains ~87 pct of SR, indicating slow signal decay.",
+  "n_batches_used": 6
+}

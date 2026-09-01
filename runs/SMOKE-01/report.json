@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "neg(ret(5))",
+    "cs_rank(std(20))",
+    "neg(ret(5))"
+  ],
+  "chosen_sr_train": [
+    0.3439,
+    0.165,
+    0.3439
+  ],
+  "rationale": "",
+  "n_batches_used": 1
+}

@@ -1,0 +1,1591 @@
+[
+  {
+    "run": "ABANDONED-AG-REAL-00-operator-probe",
+    "panel": "REAL",
+    "arm": "AGENT",
+    "disposition": "abandoned",
+    "reason": "operator timing probe contaminated the run before the agent started; replaced by AG-REAL-06"
+  },
+  {
+    "run": "ABANDONED-AG-SYNA05-00",
+    "panel": "SYNA05-00",
+    "arm": "AGENT",
+    "disposition": "abandoned",
+    "reason": "interrupted mid-run by a provider rate limit; re-run from scratch on the same panel"
+  },
+  {
+    "run": "ABANDONED-AG-SYNA05-01",
+    "panel": "SYNA05-01",
+    "arm": "AGENT",
+    "disposition": "abandoned",
+    "reason": "interrupted mid-run by a provider rate limit; re-run from scratch on the same panel"
+  },
+  {
+    "run": "ABANDONED-AG-SYNA05-02",
+    "panel": "SYNA05-02",
+    "arm": "AGENT",
+    "disposition": "abandoned",
+    "reason": "interrupted mid-run by a provider rate limit; re-run from scratch on the same panel"
+  },
+  {
+    "run": "ABANDONED-AG-SYNA05-03",
+    "panel": "SYNA05-03",
+    "arm": "AGENT",
+    "disposition": "abandoned",
+    "reason": "interrupted mid-run by a provider rate limit; re-run from scratch on the same panel"
+  },
+  {
+    "run": "AG-REAL-01",
+    "panel": "REAL",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-REAL-02",
+    "panel": "REAL",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-REAL-03",
+    "panel": "REAL",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-REAL-04",
+    "panel": "REAL",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-REAL-05",
+    "panel": "REAL",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-REAL-06",
+    "panel": "REAL",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-SYN0-00",
+    "panel": "SYN0-00",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-SYN0-01",
+    "panel": "SYN0-01",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-SYN0-02",
+    "panel": "SYN0-02",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-SYN0-03",
+    "panel": "SYN0-03",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-SYN0-04",
+    "panel": "SYN0-04",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-SYN0-05",
+    "panel": "SYN0-05",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-SYN0-06",
+    "panel": "SYN0-06",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-SYN0-07",
+    "panel": "SYN0-07",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-SYN0-08",
+    "panel": "SYN0-08",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-SYN0-09",
+    "panel": "SYN0-09",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-SYN0-10",
+    "panel": "SYN0-10",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-SYN0-11",
+    "panel": "SYN0-11",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-SYNA05-00",
+    "panel": "SYNA05-00",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-SYNA05-01",
+    "panel": "SYNA05-01",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-SYNA05-02",
+    "panel": "SYNA05-02",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-SYNA05-03",
+    "panel": "SYNA05-03",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-SYNA10-00",
+    "panel": "SYNA10-00",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-SYNA10-01",
+    "panel": "SYNA10-01",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-SYNA10-02",
+    "panel": "SYNA10-02",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AG-SYNA10-03",
+    "panel": "SYNA10-03",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AGB-SYN0-00",
+    "panel": "SYN0-00",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AGB-SYN0-01",
+    "panel": "SYN0-01",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "AGB-SYN0-02",
+    "panel": "SYN0-02",
+    "arm": "AGENT",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-REAL-s9500",
+    "panel": "REAL",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-REAL-s9501",
+    "panel": "REAL",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-REAL-s9502",
+    "panel": "REAL",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-REAL-s9503",
+    "panel": "REAL",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-REAL-s9504",
+    "panel": "REAL",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYN0-00-s9500",
+    "panel": "SYN0-00",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYN0-00-s9501",
+    "panel": "SYN0-00",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYN0-01-s9500",
+    "panel": "SYN0-01",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYN0-01-s9501",
+    "panel": "SYN0-01",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYN0-02-s9500",
+    "panel": "SYN0-02",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYN0-02-s9501",
+    "panel": "SYN0-02",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYN0-03-s9500",
+    "panel": "SYN0-03",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYN0-03-s9501",
+    "panel": "SYN0-03",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYN0-04-s9500",
+    "panel": "SYN0-04",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYN0-04-s9501",
+    "panel": "SYN0-04",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYN0-05-s9500",
+    "panel": "SYN0-05",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYN0-05-s9501",
+    "panel": "SYN0-05",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYN0-06-s9500",
+    "panel": "SYN0-06",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYN0-06-s9501",
+    "panel": "SYN0-06",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYN0-07-s9500",
+    "panel": "SYN0-07",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYN0-07-s9501",
+    "panel": "SYN0-07",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYN0-08-s9500",
+    "panel": "SYN0-08",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYN0-08-s9501",
+    "panel": "SYN0-08",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYN0-09-s9500",
+    "panel": "SYN0-09",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYN0-09-s9501",
+    "panel": "SYN0-09",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYN0-10-s9500",
+    "panel": "SYN0-10",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYN0-10-s9501",
+    "panel": "SYN0-10",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYN0-11-s9500",
+    "panel": "SYN0-11",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYN0-11-s9501",
+    "panel": "SYN0-11",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYNA05-00-s9500",
+    "panel": "SYNA05-00",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYNA05-00-s9501",
+    "panel": "SYNA05-00",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYNA05-01-s9500",
+    "panel": "SYNA05-01",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYNA05-01-s9501",
+    "panel": "SYNA05-01",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYNA05-02-s9500",
+    "panel": "SYNA05-02",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYNA05-02-s9501",
+    "panel": "SYNA05-02",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYNA05-03-s9500",
+    "panel": "SYNA05-03",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYNA05-03-s9501",
+    "panel": "SYNA05-03",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYNA10-00-s9500",
+    "panel": "SYNA10-00",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYNA10-00-s9501",
+    "panel": "SYNA10-00",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYNA10-01-s9500",
+    "panel": "SYNA10-01",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYNA10-01-s9501",
+    "panel": "SYNA10-01",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYNA10-02-s9500",
+    "panel": "SYNA10-02",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYNA10-02-s9501",
+    "panel": "SYNA10-02",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYNA10-03-s9500",
+    "panel": "SYNA10-03",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "CS-SYNA10-03-s9501",
+    "panel": "SYNA10-03",
+    "arm": "CANON-SAMPLER",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-REAL-s9000",
+    "panel": "REAL",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-REAL-s9001",
+    "panel": "REAL",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-REAL-s9002",
+    "panel": "REAL",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-REAL-s9003",
+    "panel": "REAL",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-REAL-s9004",
+    "panel": "REAL",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-00-s9000",
+    "panel": "SYN0-00",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-00-s9001",
+    "panel": "SYN0-00",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-00-s9002",
+    "panel": "SYN0-00",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-01-s9000",
+    "panel": "SYN0-01",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-01-s9001",
+    "panel": "SYN0-01",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-01-s9002",
+    "panel": "SYN0-01",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-02-s9000",
+    "panel": "SYN0-02",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-02-s9001",
+    "panel": "SYN0-02",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-02-s9002",
+    "panel": "SYN0-02",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-03-s9000",
+    "panel": "SYN0-03",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-03-s9001",
+    "panel": "SYN0-03",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-03-s9002",
+    "panel": "SYN0-03",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-04-s9000",
+    "panel": "SYN0-04",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-04-s9001",
+    "panel": "SYN0-04",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-04-s9002",
+    "panel": "SYN0-04",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-05-s9000",
+    "panel": "SYN0-05",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-05-s9001",
+    "panel": "SYN0-05",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-05-s9002",
+    "panel": "SYN0-05",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-06-s9000",
+    "panel": "SYN0-06",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-06-s9001",
+    "panel": "SYN0-06",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-06-s9002",
+    "panel": "SYN0-06",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-07-s9000",
+    "panel": "SYN0-07",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-07-s9001",
+    "panel": "SYN0-07",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-07-s9002",
+    "panel": "SYN0-07",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-08-s9000",
+    "panel": "SYN0-08",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-08-s9001",
+    "panel": "SYN0-08",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-08-s9002",
+    "panel": "SYN0-08",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-09-s9000",
+    "panel": "SYN0-09",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-09-s9001",
+    "panel": "SYN0-09",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-09-s9002",
+    "panel": "SYN0-09",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-10-s9000",
+    "panel": "SYN0-10",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-10-s9001",
+    "panel": "SYN0-10",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-10-s9002",
+    "panel": "SYN0-10",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-11-s9000",
+    "panel": "SYN0-11",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-11-s9001",
+    "panel": "SYN0-11",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTH-SYN0-11-s9002",
+    "panel": "SYN0-11",
+    "arm": "OPT-hard",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-REAL-s9000",
+    "panel": "REAL",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-REAL-s9001",
+    "panel": "REAL",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-REAL-s9002",
+    "panel": "REAL",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-REAL-s9003",
+    "panel": "REAL",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-REAL-s9004",
+    "panel": "REAL",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-00-s9000",
+    "panel": "SYN0-00",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-00-s9001",
+    "panel": "SYN0-00",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-00-s9002",
+    "panel": "SYN0-00",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-01-s9000",
+    "panel": "SYN0-01",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-01-s9001",
+    "panel": "SYN0-01",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-01-s9002",
+    "panel": "SYN0-01",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-02-s9000",
+    "panel": "SYN0-02",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-02-s9001",
+    "panel": "SYN0-02",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-02-s9002",
+    "panel": "SYN0-02",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-03-s9000",
+    "panel": "SYN0-03",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-03-s9001",
+    "panel": "SYN0-03",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-03-s9002",
+    "panel": "SYN0-03",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-04-s9000",
+    "panel": "SYN0-04",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-04-s9001",
+    "panel": "SYN0-04",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-04-s9002",
+    "panel": "SYN0-04",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-05-s9000",
+    "panel": "SYN0-05",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-05-s9001",
+    "panel": "SYN0-05",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-05-s9002",
+    "panel": "SYN0-05",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-06-s9000",
+    "panel": "SYN0-06",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-06-s9001",
+    "panel": "SYN0-06",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-06-s9002",
+    "panel": "SYN0-06",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-07-s9000",
+    "panel": "SYN0-07",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-07-s9001",
+    "panel": "SYN0-07",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-07-s9002",
+    "panel": "SYN0-07",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-08-s9000",
+    "panel": "SYN0-08",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-08-s9001",
+    "panel": "SYN0-08",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-08-s9002",
+    "panel": "SYN0-08",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-09-s9000",
+    "panel": "SYN0-09",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-09-s9001",
+    "panel": "SYN0-09",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-09-s9002",
+    "panel": "SYN0-09",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-10-s9000",
+    "panel": "SYN0-10",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-10-s9001",
+    "panel": "SYN0-10",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-10-s9002",
+    "panel": "SYN0-10",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-11-s9000",
+    "panel": "SYN0-11",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-11-s9001",
+    "panel": "SYN0-11",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYN0-11-s9002",
+    "panel": "SYN0-11",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYNA05-00-s9000",
+    "panel": "SYNA05-00",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYNA05-00-s9001",
+    "panel": "SYNA05-00",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYNA05-00-s9002",
+    "panel": "SYNA05-00",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYNA05-01-s9000",
+    "panel": "SYNA05-01",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYNA05-01-s9001",
+    "panel": "SYNA05-01",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYNA05-01-s9002",
+    "panel": "SYNA05-01",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYNA05-02-s9000",
+    "panel": "SYNA05-02",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYNA05-02-s9001",
+    "panel": "SYNA05-02",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYNA05-02-s9002",
+    "panel": "SYNA05-02",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYNA05-03-s9000",
+    "panel": "SYNA05-03",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYNA05-03-s9001",
+    "panel": "SYNA05-03",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYNA05-03-s9002",
+    "panel": "SYNA05-03",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYNA10-00-s9000",
+    "panel": "SYNA10-00",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYNA10-00-s9001",
+    "panel": "SYNA10-00",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYNA10-00-s9002",
+    "panel": "SYNA10-00",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYNA10-01-s9000",
+    "panel": "SYNA10-01",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYNA10-01-s9001",
+    "panel": "SYNA10-01",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYNA10-01-s9002",
+    "panel": "SYNA10-01",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYNA10-02-s9000",
+    "panel": "SYNA10-02",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYNA10-02-s9001",
+    "panel": "SYNA10-02",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYNA10-02-s9002",
+    "panel": "SYNA10-02",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYNA10-03-s9000",
+    "panel": "SYNA10-03",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYNA10-03-s9001",
+    "panel": "SYNA10-03",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTM-SYNA10-03-s9002",
+    "panel": "SYNA10-03",
+    "arm": "OPT-medium",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-REAL-s9000",
+    "panel": "REAL",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-REAL-s9001",
+    "panel": "REAL",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-REAL-s9002",
+    "panel": "REAL",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-REAL-s9003",
+    "panel": "REAL",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-REAL-s9004",
+    "panel": "REAL",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-00-s9000",
+    "panel": "SYN0-00",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-00-s9001",
+    "panel": "SYN0-00",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-00-s9002",
+    "panel": "SYN0-00",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-01-s9000",
+    "panel": "SYN0-01",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-01-s9001",
+    "panel": "SYN0-01",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-01-s9002",
+    "panel": "SYN0-01",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-02-s9000",
+    "panel": "SYN0-02",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-02-s9001",
+    "panel": "SYN0-02",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-02-s9002",
+    "panel": "SYN0-02",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-03-s9000",
+    "panel": "SYN0-03",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-03-s9001",
+    "panel": "SYN0-03",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-03-s9002",
+    "panel": "SYN0-03",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-04-s9000",
+    "panel": "SYN0-04",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-04-s9001",
+    "panel": "SYN0-04",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-04-s9002",
+    "panel": "SYN0-04",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-05-s9000",
+    "panel": "SYN0-05",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-05-s9001",
+    "panel": "SYN0-05",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-05-s9002",
+    "panel": "SYN0-05",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-06-s9000",
+    "panel": "SYN0-06",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-06-s9001",
+    "panel": "SYN0-06",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-06-s9002",
+    "panel": "SYN0-06",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-07-s9000",
+    "panel": "SYN0-07",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-07-s9001",
+    "panel": "SYN0-07",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-07-s9002",
+    "panel": "SYN0-07",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-08-s9000",
+    "panel": "SYN0-08",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-08-s9001",
+    "panel": "SYN0-08",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-08-s9002",
+    "panel": "SYN0-08",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-09-s9000",
+    "panel": "SYN0-09",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-09-s9001",
+    "panel": "SYN0-09",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-09-s9002",
+    "panel": "SYN0-09",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-10-s9000",
+    "panel": "SYN0-10",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-10-s9001",
+    "panel": "SYN0-10",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-10-s9002",
+    "panel": "SYN0-10",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-11-s9000",
+    "panel": "SYN0-11",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-11-s9001",
+    "panel": "SYN0-11",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "OPTS-SYN0-11-s9002",
+    "panel": "SYN0-11",
+    "arm": "OPT-soft",
+    "disposition": "included",
+    "reason": ""
+  },
+  {
+    "run": "SMOKE-01",
+    "panel": "SYN0-00",
+    "arm": "SMOKE",
+    "disposition": "excluded",
+    "reason": "harness smoke test, never an experimental run"
+  }
+]

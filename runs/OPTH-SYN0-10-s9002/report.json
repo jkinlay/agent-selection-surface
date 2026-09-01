@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "sub(sub(sub(corrm(60), sign(kurt(20))), add(std(250), abs_(skew(60)))), sign(mul(logret(40), corrm(5))))",
+    "sub(sub(sub(corrm(60), sign(kurt(20))), delay(logret(40), 7)), sign(mul(logret(40), corrm(5))))",
+    "ts_z(sub(mul(mul(beta(60), skew(20)), corrm(120)), delay(logret(40), 7)), 40)"
+  ],
+  "chosen_sr_train": [
+    1.3654,
+    1.2093,
+    1.1368
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-hard)",
+  "n_batches_used": 12
+}

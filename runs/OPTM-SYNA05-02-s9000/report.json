@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "ts_z(ts_z(div(cs_z(corrm(60)), std(120)), 5), 250)",
+    "ts_z(ts_z(div(beta(10), std(120)), 5), 250)",
+    "ts_z(ts_z(div(beta(10), corrm(120)), 5), 250)"
+  ],
+  "chosen_sr_train": [
+    1.3491,
+    1.2672,
+    1.2359
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-medium)",
+  "n_batches_used": 12
+}

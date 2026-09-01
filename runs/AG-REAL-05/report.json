@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(cs_z(div(ts_z(neg(minr(60)), 60), std(120))), cs_z(div(ts_z(neg(skew(60)), 60), std(40))))",
+    "add(cs_z(div(ts_z(neg(minr(60)), 60), std(60))), cs_z(div(ts_z(neg(skew(60)), 120), std(60))))",
+    "add(add(cs_z(div(ts_z(neg(minr(60)), 60), std(120))), cs_z(div(ts_z(neg(skew(60)), 120), std(40)))), cs_z(div(ts_z(neg(minr(10)), 120), std(60))))"
+  ],
+  "chosen_sr_train": [
+    3.055,
+    2.9441,
+    2.7918
+  ],
+  "rationale": "All three are equal weight cross sectional blends built on one template: standardize a predictor per name over time with ts_z, then scale cross sectionally by inverse realized volatility. Leg one is range position, the negated price relative to its rolling 60 day low; leg two is negated 60 day return skew. The panel is dominated by short horizon cross sectional mean reversion, and range position captures it better than raw returns while skew adds a distribution shape effect that is largely independent. Both normalization steps are essential: raw neg(minr(60)) scores only 0.63 and vol scaling without ts_z scores 0.48 with negative IC, while the standardized and vol scaled version reaches 2.6 and the two leg blend reaches 2.9 to 3.1. I selected for plateau membership rather than peak SR. The blend family scores 2.93 to 3.06 across every denominator variant tested, and the minr(60) core holds 2.10 to 2.63 across four ts_z windows and six denominators, so neither pick depends on a single lucky cell. A three day delay cuts core SR from 2.59 to 1.31, confirming a genuine decaying short horizon effect rather than a static low volatility tilt. Pick one is a top cell whose neighbours all exceed 2.95; pick two uses a deliberately different parameterization, std(60) on both legs with the alternate skew z window, to decorrelate the parameter choice; pick three adds a short horizon reversal leg, giving up about nine percent of train SR for a twenty five percent higher rank IC of 0.0172 as breadth insurance.",
+  "n_batches_used": 12
+}

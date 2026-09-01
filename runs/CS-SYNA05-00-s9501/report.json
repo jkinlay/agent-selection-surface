@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "cs_rank(sub(ret(120), ret(60)))",
+    "sub(ret(120), ret(60))",
+    "sub(ret(120), ret(40))"
+  ],
+  "chosen_sr_train": [
+    0.8006,
+    0.8006,
+    0.7065
+  ],
+  "rationale": "argmax-3 by train Sharpe (CANON-SAMPLER)",
+  "n_batches_used": 12
+}

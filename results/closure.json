@@ -1,0 +1,55 @@
+{
+  "agent_median_N": 146.0,
+  "agent_median_book_legs": 12.5,
+  "blind_at_3_legs": 1.63,
+  "blind_at_agent_legs": 1.88,
+  "leg_axis_alone": 0.25,
+  "agent_minus_pooled_mechanical_actual": 0.45,
+  "by_arm": [
+    {
+      "arm": "AGENT",
+      "n_runs": 12,
+      "median_N_logged": 146.0,
+      "median_book_legs": 12.5,
+      "predicted_blind": 1.8612567889784415,
+      "actual": 2.118644114021057,
+      "actual_minus_predicted": 0.2573873250426153
+    },
+    {
+      "arm": "CANON-SAMPLER",
+      "n_runs": 24,
+      "median_N_logged": 110.0,
+      "median_book_legs": 3.0,
+      "predicted_blind": 1.5627482656518978,
+      "actual": 1.2567167571219502,
+      "actual_minus_predicted": -0.30603150852994765
+    },
+    {
+      "arm": "OPT-hard",
+      "n_runs": 36,
+      "median_N_logged": 147.5,
+      "median_book_legs": 3.0,
+      "predicted_blind": 1.6802717396620386,
+      "actual": 1.6546030880190379,
+      "actual_minus_predicted": -0.025668651643000695
+    },
+    {
+      "arm": "OPT-medium",
+      "n_runs": 36,
+      "median_N_logged": 204.5,
+      "median_book_legs": 3.0,
+      "predicted_blind": 1.7275698894438865,
+      "actual": 1.6725738215915618,
+      "actual_minus_predicted": -0.05499606785232469
+    },
+    {
+      "arm": "OPT-soft",
+      "n_runs": 36,
+      "median_N_logged": 224.5,
+      "median_book_legs": 3.0,
+      "predicted_blind": 1.7676942347200248,
+      "actual": 1.6778811514896135,
+      "actual_minus_predicted": -0.08981308323041137
+    }
+  ]
+}

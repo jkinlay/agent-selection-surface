@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "sign(cs_z(sign(kurt(120))))",
+    "sign(kurt(120))",
+    "add(kurt(15), kurt(40))"
+  ],
+  "chosen_sr_train": [
+    1.1959,
+    1.1959,
+    1.099
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-medium)",
+  "n_batches_used": 12
+}

@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(cs_rank(add(cs_rank(add(cs_rank(div(delay(ret(60), 5), std(5))), cs_rank(div(delay(ret(60), 10), std(20))))), cs_rank(div(sub(ret(60), ret(5)), std(5))))), cs_rank(add(cs_rank(sub(kurt(15), skew(40))), cs_rank(sub(kurt(15), skew(5))))))",
+    "add(add(cs_rank(div(delay(ret(60), 5), std(5))), cs_rank(div(delay(ret(60), 10), std(20)))), add(cs_rank(sub(kurt(15), skew(40))), cs_rank(sub(kurt(15), skew(5)))))",
+    "add(cs_rank(div(delay(ret(60), 5), std(5))), cs_rank(add(cs_rank(sub(kurt(15), skew(40))), cs_rank(sub(kurt(15), skew(5))))))"
+  ],
+  "chosen_sr_train": [
+    2.9422,
+    2.908,
+    2.9756
+  ],
+  "rationale": "All three implement the same economic structure: volatility-scaled skip-momentum blended 50/50 in rank space with a tail-shape leg (high kurtosis, negative skew). The legs are near-orthogonal, running about 2.0-2.1 train SR standalone and combining to 2.91-2.98. The optimum is a broad smooth plateau across every lookback axis (momentum 40-120, delay 3-15, vol denominator 5-60, kurtosis 10-60, skew 5-60 all sit in the 2.2-3.0 band) and the kurtosis premium is positive at every window from 5 to 250, so the structure is not a lookback artifact. I chose the balanced 50/50 family over a variant scoring 3.005 that overweights the tail leg 2 to 1: the train SR gap is inside the standard error of a Sharpe estimate, while the balanced family carries systematically higher rank IC (0.0150-0.0154 vs 0.0136), a broader cross-sectional edge less reliant on a few high-leverage days. The three average over one, two and three momentum specifications against a two-specification tail leg, diversifying lookback-selection risk across the reported set.",
+  "n_batches_used": 12
+}

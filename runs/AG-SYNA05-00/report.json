@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(add(add(add(add(add(add(add(cs_z(ts_z(ret(3), 40)), cs_z(kurt(15))), cs_z(ts_z(kurt(15), 120))), cs_z(sub(kurt(15), kurt(40)))), cs_z(ret(120))), cs_z(neg(delay(ret(3), 3)))), cs_z(sub(beta(20), beta(120)))), cs_z(sub(beta(60), beta(120)))), cs_z(maxr(3)))",
+    "add(add(add(add(add(add(add(cs_z(ts_z(ret(3), 20)), cs_z(kurt(15))), cs_z(ts_z(kurt(15), 120))), cs_z(sub(kurt(15), kurt(40)))), cs_z(ret(120))), cs_z(neg(delay(ret(3), 3)))), cs_z(sub(beta(20), beta(120)))), cs_z(maxr(3)))",
+    "add(add(add(add(add(add(add(add(add(cs_z(ts_z(ret(3), 40)), cs_z(kurt(15))), cs_z(kurt(20))), cs_z(ts_z(kurt(15), 120))), cs_z(sub(kurt(15), kurt(40)))), cs_z(ret(120))), cs_z(neg(delay(ret(3), 3)))), cs_z(sub(beta(20), beta(120)))), cs_z(sub(beta(60), beta(120)))), cs_z(maxr(3)))"
+  ],
+  "chosen_sr_train": [
+    2.2253,
+    2.22,
+    2.2002
+  ],
+  "rationale": "All three are equal weight cross sectional z score blends of five near orthogonal effects that each showed standalone predictive power of the correct sign before combination: risk normalized 1 to 3 day momentum (ts_z(ret(3),20 to 40), SR 0.87 to 1.03), the mirror 4 to 6 day reversal (neg(delay(ret(3),3)), SR 0.49), a short window return kurtosis or jump premium in three complementary forms (kurt(15) SR 1.10, ts_z(kurt(15),120) SR 0.99, sub(kurt(15),kurt(40)) SR 1.20), medium term momentum ret(120) SR 0.59, and a market beta term structure (sub(beta(20),beta(120)) SR 0.86, sub(beta(60),beta(120)) SR 0.79), plus short range position maxr(3) SR 0.71. Additive z score combination was decisive: multiplicative combination of the same legs gave SR -0.56, so the legs carry independent additive information. Train SR is 2.23, 2.22 and 2.20 respectively. Selection risk was managed by requiring plateau rather than peak behaviour, since substituting neighbouring lookbacks in any family keeps train SR inside roughly 2.0 to 2.23, and by ensembling over parameter choices within families rather than taking the single best parameterization. The three differ in momentum lookback and in which kurtosis and beta forms are ensembled, so no single parameter choice is shared by all of them.",
+  "n_batches_used": 12
+}

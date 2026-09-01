@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "neg(ts_z(skew(15), 15))",
+    "abs_(cs_z(kurt(15)))",
+    "delay(add(delay(mul(delay(ma(15), 14), mul(skew(15), corrm(60))), 12), ts_z(mul(maxr(20), ma(10)), 20)), 11)"
+  ],
+  "chosen_sr_train": [
+    1.136,
+    0.9352,
+    0.8995
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-soft)",
+  "n_batches_used": 12
+}

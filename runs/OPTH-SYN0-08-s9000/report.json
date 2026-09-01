@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "mul(skew(40), cs_z(beta(60)))",
+    "mul(skew(40), cs_z(cs_z(beta(60))))",
+    "std(120)"
+  ],
+  "chosen_sr_train": [
+    0.9682,
+    0.9682,
+    0.9648
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-hard)",
+  "n_batches_used": 12
+}

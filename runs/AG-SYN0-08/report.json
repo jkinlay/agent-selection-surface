@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(cs_z(std(120)), add(neg(cs_z(kurt(20))), neg(cs_z(kurt(40)))))",
+    "add(cs_rank(std(120)), add(cs_rank(neg(kurt(20))), cs_rank(neg(kurt(60)))))",
+    "add(add(cs_z(std(120)), cs_z(std(120))), add(add(neg(cs_z(kurt(15))), neg(cs_z(kurt(20)))), add(neg(cs_z(kurt(40))), neg(cs_z(kurt(60))))))"
+  ],
+  "chosen_sr_train": [
+    1.3266,
+    1.3461,
+    1.3379
+  ],
+  "rationale": "Core alpha: long high 120d volatility, short high short-window kurtosis. Each leg is strong alone (std 120 SR 0.97; neg kurt 20-60 SR 0.83-0.85) and the combo plateaus at SR 1.28-1.35 across kurt windows 15-60, z vs rank normalization, weight choices, smoothing and delays up to 10d - a broad, parameterization-insensitive, persistent level effect rather than a tuned spike. The three picks are diverse plateau members (z with kurt 20+40; rank with kurt 20+60; 1:2 weighted wide 4-window kurt ensemble) to hedge estimation noise instead of maximizing train SR.",
+  "n_batches_used": 7
+}

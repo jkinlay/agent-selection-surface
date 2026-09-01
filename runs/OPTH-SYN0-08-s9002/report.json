@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "delay(add(delay(add(std(250), cs_z(std(120))), 5), cs_z(std(120))), 5)",
+    "delay(add(std(250), cs_z(std(120))), 5)",
+    "delay(add(std(250), cs_z(delay(std(120), 5))), 5)"
+  ],
+  "chosen_sr_train": [
+    1.0587,
+    1.0553,
+    1.0524
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-hard)",
+  "n_batches_used": 12
+}

@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "sub(add(ma(120), mul(neg(mul(maxr(250), delay(corrm(20), 11))), minr(250))), sign(mul(corrm(20), corrm(5))))",
+    "sign(neg(mul(maxr(250), delay(corrm(20), 11))))",
+    "sign(neg(mul(ma(250), delay(corrm(20), 11))))"
+  ],
+  "chosen_sr_train": [
+    1.2475,
+    1.1648,
+    1.1648
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-hard)",
+  "n_batches_used": 12
+}

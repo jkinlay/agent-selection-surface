@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "sub(div(sub(ma(3), kurt(60)), mul(skew(40), beta(60))), ts_z(delay(std(10), 1), 120))",
+    "sub(div(sub(ma(3), kurt(60)), mul(skew(40), beta(60))), delay(abs_(maxr(120)), 14))",
+    "sub(div(sub(ma(3), kurt(60)), mul(skew(40), beta(60))), delay(delay(skew(60), 17), 14))"
+  ],
+  "chosen_sr_train": [
+    1.3731,
+    1.3263,
+    1.3207
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-soft)",
+  "n_batches_used": 12
+}

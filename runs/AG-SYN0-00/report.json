@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(add(cs_z(add(ma(120), ma(250))), cs_z(delay(ret(3), 5))), cs_z(kurt(250)))",
+    "add(add(cs_z(add(ma(60), add(ma(120), ma(250)))), cs_z(delay(ret(3), 5))), cs_z(kurt(250)))",
+    "add(cs_z(add(ma(120), ma(250))), cs_z(delay(ret(3), 5)))"
+  ],
+  "chosen_sr_train": [
+    2.147,
+    2.136,
+    2.068
+  ],
+  "rationale": "All three combine the two independently validated engines: long-horizon cross-sectional mean reversion (ma 120-250, plateau confirmed across ret, ma, minr and maxr formulations at horizons 60-250) and a weekly return echo (returns from days t-8 to t-5 predict positively, with a coherent oscillating lag profile). The engines are nearly orthogonal, and blend train SR sits on a broad 1.9-2.16 plateau across weightings, horizon sets and rank vs z normalization, which argues the edge is structural rather than a selection artifact. Variants differ in reversal horizon set and a small kurt(250) add-on to hedge specification risk.",
+  "n_batches_used": 6
+}

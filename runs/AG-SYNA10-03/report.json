@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(add(add(cs_z(neg(ret(250))), cs_z(neg(ret(5)))), add(cs_z(add(cs_z(kurt(10)), add(cs_z(kurt(15)), cs_z(kurt(20))))), cs_z(add(cs_z(neg(sub(corrm(10), corrm(250)))), cs_z(neg(sub(corrm(10), corrm(120)))))))), cs_z(neg(skew(120))))",
+    "add(add(add(cs_z(neg(ret(250))), cs_z(neg(ret(5)))), add(cs_z(add(cs_z(kurt(10)), add(cs_z(kurt(15)), cs_z(kurt(20))))), cs_z(neg(sub(corrm(10), corrm(250)))))), cs_z(neg(skew(120))))",
+    "add(add(add(cs_z(neg(ret(250))), cs_z(neg(ret(5)))), add(cs_z(add(cs_z(div(kurt(10), std(40))), add(cs_z(div(kurt(15), std(40))), cs_z(div(kurt(20), std(40)))))), cs_z(neg(sub(corrm(10), corrm(250)))))), cs_z(neg(skew(120))))"
+  ],
+  "chosen_sr_train": [
+    2.7954,
+    2.8166,
+    2.8037
+  ],
+  "rationale": "All three are equal-weight cs_z composites of five economically distinct, low-correlation components: long-horizon reversal neg(ret(250)), short-horizon reversal neg(ret(5)), short-window kurtosis, decorrelation from the panel via a short-minus-long correlation spread, and negative skew neg(skew(120)). Standalone these run only 0.5 to 1.7 SR but combine to 2.80, the signature of real diversification rather than one overfit effect. With the architecture fixed the train SR is a plateau (over 40 parameterizations between 2.70 and 2.82), so I selected on robustness, not the train maximum. The kurtosis slot averages lookbacks 10, 15 and 20 instead of taking the sharp n=15 peak, which costs nothing on train while removing lookback-selection risk; signal 1 additionally hedges the decorrelation slot across two correlation spreads. beta(250) was excluded because it raised IC but consistently lowered Sharpe, and equal weighting beat every unequal weighting tested. The three differ only along the two axes carrying the most parameter risk, the kurtosis normalization and whether the decorrelation slot is hedged, so no single fragile choice sinks all three out of sample.",
+  "n_batches_used": 12
+}

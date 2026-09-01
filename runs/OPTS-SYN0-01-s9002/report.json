@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "ts_z(sub(ret(5), mul(sub(beta(5), std(3)), ret(10))), 40)",
+    "div(abs_(ts_z(skew(250), 5)), delay(mul(std(120), sign(std(10))), 16))",
+    "beta(3)"
+  ],
+  "chosen_sr_train": [
+    1.2524,
+    1.0597,
+    0.9387
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-soft)",
+  "n_batches_used": 12
+}

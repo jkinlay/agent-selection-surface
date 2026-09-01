@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "ts_z(sign(corrm(10)), 5)",
+    "mul(ts_z(sign(corrm(10)), 5), ma(250))",
+    "mul(ts_z(sign(corrm(10)), 5), maxr(40))"
+  ],
+  "chosen_sr_train": [
+    1.2898,
+    1.1511,
+    1.0516
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-soft)",
+  "n_batches_used": 12
+}

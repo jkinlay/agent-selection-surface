@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(add(add(add(add(cs_rank(add(delay(ret(20),10), delay(ret(20),15))), cs_rank(add(delay(ret(20),10), delay(ret(20),15)))), cs_rank(kurt(15))), cs_rank(kurt(15))), cs_rank(neg(std(5)))), cs_rank(neg(ret(5))))",
+    "add(add(add(add(add(add(cs_z(add(add(delay(ret(20),10), delay(ret(20),15)), delay(ret(15),15))), cs_z(add(add(delay(ret(20),10), delay(ret(20),15)), delay(ret(15),15)))), cs_z(kurt(15))), cs_z(kurt(15))), cs_z(neg(std(5)))), cs_z(neg(ret(5)))), cs_z(skew(120)))",
+    "add(add(add(add(add(cs_rank(add(delay(ret(20),10), delay(ret(20),15))), cs_rank(add(delay(ret(20),10), delay(ret(20),15)))), cs_rank(add(kurt(10), kurt(15)))), cs_rank(add(kurt(15), kurt(20)))), cs_rank(neg(std(5)))), cs_rank(neg(ret(5))))"
+  ],
+  "chosen_sr_train": [
+    3.462,
+    3.3872,
+    3.3821
+  ],
+  "rationale": "All three are the same four-factor blend of cross-sectionally standardised legs: lagged intermediate momentum (average of delay(ret(20),10) and delay(ret(20),15), i.e. the return path from about t-35 to t-10, excluding the most recent fortnight), short-window kurtosis, low short-horizon volatility neg(std(5)), and short-term reversal neg(ret(5)). Momentum and reversal legs are two ends of the same return term structure: the recent fortnight mean-reverts while the older segment trends, which is why lagging the momentum window and shorting last week both add value. Train SR 3.38 to 3.46 with rank IC 0.016 to 0.0177. Selected for plateau stability rather than peak score: perturbing any single leg lookback one at a time kept every variant within 3.23 to 3.46, and leg weights are flat (doubling momentum and kurtosis helped slightly, tripling either hurt). The three picks deliberately spread the main decay risk, which is that kurt(15) shows a very high SR relative to its breadth (IC 0.0048 standalone) and a peaked lookback profile. Pick 1 is the top train score using rank aggregation for bounded outlier influence; pick 2 switches to z aggregation, averages momentum over three lagged windows and adds a skew(120) leg for the best breadth of the three; pick 3 smooths the kurtosis leg across windows 10, 15 and 20 so the result does not depend on one lookback being exactly right.",
+  "n_batches_used": 12
+}

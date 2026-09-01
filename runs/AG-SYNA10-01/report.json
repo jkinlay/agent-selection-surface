@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(add(cs_rank(mul(neg(ret(5)), std(40))), cs_rank(neg(skew(15)))), add(cs_rank(kurt(15)), cs_rank(add(cs_rank(sub(cs_rank(kurt(20)), cs_rank(kurt(120)))), cs_rank(sub(cs_rank(kurt(20)), cs_rank(kurt(60))))))))",
+    "add(add(cs_rank(add(cs_rank(mul(neg(ret(3)), std(20))), cs_rank(mul(neg(ret(5)), std(40))))), cs_rank(add(cs_rank(neg(skew(15))), cs_rank(neg(skew(20)))))), add(cs_rank(kurt(15)), cs_rank(add(cs_rank(sub(cs_rank(kurt(20)), cs_rank(kurt(120)))), cs_rank(sub(cs_rank(kurt(20)), cs_rank(kurt(60))))))))",
+    "add(add(cs_rank(mul(neg(ret(5)), std(120))), cs_rank(neg(skew(15)))), add(cs_rank(kurt(15)), cs_rank(sub(cs_rank(kurt(20)), cs_rank(kurt(120))))))"
+  ],
+  "chosen_sr_train": [
+    2.1803,
+    2.1793,
+    2.1576
+  ],
+  "rationale": "All three are equal weighted rank sums of the same three near orthogonal legs that dominate this panel. Leg one vol scaled short horizon reversal, leg two short window negative skew lottery aversion tilt, leg three de trended short window kurtosis tail intensity computed as kurt(15) plus the rank spread of kurt(20) against longer window kurtosis. Best single leg is about SR 1.4 on train while the combination reaches 2.15 to 2.18 so the gain comes from diversification not parameter tuning. A one at a time perturbation of every lookback kept the whole neighbourhood between 1.97 and 2.18 confirming a broad plateau, so I picked three points that average over nuisance parameters rather than the single highest train score. The three differ in reversal vol scaler std(40) versus mixed std(20) and std(40) versus the slower std(120), in whether the skew and reversal legs are single or blended, and in whether the kurtosis term structure denominator is averaged over 60 and 120 or uses 120 alone, so no fragile parameter choice is common to all three.",
+  "n_batches_used": 12
+}

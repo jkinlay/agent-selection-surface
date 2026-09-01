@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "div(div(neg(sub(kurt(120), div(neg(ret(120)), logret(15)))), ts_z(std(20), 5)), std(20))",
+    "div(div(neg(sub(kurt(120), div(neg(ret(20)), logret(15)))), ts_z(std(20), 5)), std(20))",
+    "sign(delay(cs_z(sub(logret(3), kurt(250))), 10))"
+  ],
+  "chosen_sr_train": [
+    1.9126,
+    1.3577,
+    1.3543
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-soft)",
+  "n_batches_used": 12
+}

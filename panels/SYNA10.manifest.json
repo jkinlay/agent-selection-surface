@@ -1,0 +1,26 @@
+[
+  {
+    "panel": "SYNA10-00",
+    "seed": 8200,
+    "kappa_rev": 0.00011204,
+    "kappa_anti": 0.00011469
+  },
+  {
+    "panel": "SYNA10-01",
+    "seed": 8201,
+    "kappa_rev": 0.00011204,
+    "kappa_anti": 0.00011469
+  },
+  {
+    "panel": "SYNA10-02",
+    "seed": 8202,
+    "kappa_rev": 0.00011204,
+    "kappa_anti": 0.00011469
+  },
+  {
+    "panel": "SYNA10-03",
+    "seed": 8203,
+    "kappa_rev": 0.00011204,
+    "kappa_anti": 0.00011469
+  }
+]

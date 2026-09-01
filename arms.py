@@ -41,7 +41,9 @@ class _Scorer:
         self.r1 = self.px.pct_change()
         self.ev = Evaluator(self.px)
 
-    def score_exprs(self, exprs):
+    def score_exprs(self, exprs, ic=True):
+        from backtest import portfolio_returns, sharpe as _sh
+
         out = []
         for e in exprs:
             try:
@@ -51,9 +53,13 @@ class _Scorer:
                     out.append({"expr": unparse(ast) if not isinstance(e, str) else e,
                                 "error": "degenerate"})
                     continue
-                sc = score(s, self.r1)
-                out.append({"expr": unparse(ast) if not isinstance(e, str) else e,
-                            "sharpe": sc["sharpe"], "ic": sc["ic"]})
+                name = unparse(ast) if not isinstance(e, str) else e
+                if ic:
+                    sc = score(s, self.r1)
+                    out.append({"expr": name, "sharpe": sc["sharpe"], "ic": sc["ic"]})
+                else:
+                    sr = round(_sh(portfolio_returns(s, self.r1)), 4)
+                    out.append({"expr": name, "sharpe": sr})
             except Exception as ex:
                 out.append({"expr": str(e)[:80], "error": str(ex)[:120]})
         return out
@@ -87,7 +93,7 @@ def run_rs(panel_id, seed, run_id=None):
     """Random search: 12 x 25 draws from the grammar prior."""
     rng = np.random.default_rng(seed)
     sc = _Scorer(panel_id)
-    batches = [sc.score_exprs([random_expr(rng) for _ in range(BATCH)])
+    batches = [sc.score_exprs([random_expr(rng) for _ in range(BATCH)], ic=False)
                for _ in range(N_ROUNDS)]
     run_id = run_id or f"RS-{panel_id}-s{seed}"
     return _write_run(run_id, panel_id, "RS", batches)
@@ -102,7 +108,7 @@ def run_opt(panel_id, seed, setting="medium", run_id=None):
     pop = [random_expr(rng) for _ in range(BATCH)]
     batches, scored = [], []
     for g in range(N_ROUNDS):
-        res = sc.score_exprs(pop)
+        res = sc.score_exprs(pop, ic=False)
         batches.append(res)
         pairs = [(parse(r["expr"]), r["sharpe"]) for r in res if "sharpe" in r]
         scored.extend(pairs)
@@ -131,7 +137,7 @@ def run_canon_sampler(panel_id, seed, run_id=None):
     """Canon-shaped draws, no feedback: prior direction without optimization."""
     rng = np.random.default_rng(seed)
     sc = _Scorer(panel_id)
-    batches = [sc.score_exprs([jitter_template(rng) for _ in range(BATCH)])
+    batches = [sc.score_exprs([jitter_template(rng) for _ in range(BATCH)], ic=False)
                for _ in range(N_ROUNDS)]
     run_id = run_id or f"CS-{panel_id}-s{seed}"
     return _write_run(run_id, panel_id, "CANON-SAMPLER", batches)
@@ -144,7 +150,7 @@ def build_null_pool(panel_id, n=2500, seed=123):
     sc = _Scorer(panel_id)
     out = []
     while len(out) < n:
-        res = sc.score_exprs([random_expr(rng) for _ in range(50)])
+        res = sc.score_exprs([random_expr(rng) for _ in range(50)], ic=False)
         out.extend([r for r in res if "sharpe" in r])
     out = out[:n]
     os.makedirs(RESULTS, exist_ok=True)

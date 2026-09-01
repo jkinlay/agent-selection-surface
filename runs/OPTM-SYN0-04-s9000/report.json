@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "ts_z(ma(5), 5)",
+    "cs_z(mul(std(250), skew(250)))",
+    "mul(std(250), skew(250))"
+  ],
+  "chosen_sr_train": [
+    1.2477,
+    0.9519,
+    0.9519
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-medium)",
+  "n_batches_used": 12
+}

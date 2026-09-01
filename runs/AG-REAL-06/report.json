@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(cs_z(div(neg(ts_z(minr(60), 60)), std(120))), cs_z(div(neg(ts_z(skew(60), 60)), std(20))))",
+    "add(cs_z(div(neg(ts_z(minr(60), 60)), std(60))), cs_z(div(neg(ts_z(skew(60), 60)), std(40))))",
+    "add(add(cs_z(div(neg(ts_z(minr(60), 60)), std(120))), cs_z(div(neg(ts_z(skew(60), 60)), std(20)))), cs_z(div(ts_z(ma(60), 60), std(120))))"
+  ],
+  "chosen_sr_train": [
+    3.0738,
+    3.0505,
+    2.9855
+  ],
+  "rationale": "All three are volatility-normalized mean-reversion blends. Core leg is the per-asset time-series z-score of distance above the rolling 60-day minimum, negated and scaled by inverse trailing volatility, which buys assets unusually depressed relative to their own recent range. Second leg is a negatively signed z-scored 60-day return skew, similarly vol-scaled, which is close to orthogonal and lifts the core from SR 2.6 to above 3.0. Picks one and two are the identical structure evaluated at two different points on a very flat denominator plateau where every combination from std 10 to std 120 scores between 3.03 and 3.10, so this is parameter averaging rather than tuning. Pick three adds a third leg built on the centered moving-average formulation of the same oversold state, sacrificing 0.09 train SR so that no pick depends on a single primitive. Selected from the plateau interior rather than the train maximum of 3.103, and supported by replication across two independent feature formulations and a smooth horizon response peaking at 60 days.",
+  "n_batches_used": 12
+}

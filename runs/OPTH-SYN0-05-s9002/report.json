@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "sign(delay(div(beta(5), kurt(5)), 10))",
+    "delay(div(beta(3), kurt(5)), 10)",
+    "sign(delay(div(beta(3), kurt(5)), 10))"
+  ],
+  "chosen_sr_train": [
+    1.5703,
+    1.4535,
+    1.0875
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-hard)",
+  "n_batches_used": 12
+}

@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(add(add(cs_z(ts_z(kurt(60), 250)), cs_z(ts_z(std(20), 250))), cs_z(ts_z(std(20), 250))), add(add(cs_z(std(20)), cs_z(kurt(120))), cs_z(ts_z(kurt(60), 250))))",
+    "add(add(add(cs_z(ts_z(kurt(60), 250)), cs_z(ts_z(std(20), 250))), cs_z(ts_z(std(20), 250))), add(cs_z(std(20)), cs_z(kurt(120))))",
+    "add(add(cs_z(ts_z(kurt(60), 250)), cs_z(ts_z(std(20), 250))), add(cs_z(std(20)), cs_z(kurt(120))))"
+  ],
+  "chosen_sr_train": [
+    1.9607,
+    1.9465,
+    1.932
+  ],
+  "rationale": "All three are weight variants of one validated core: long assets whose 60d kurtosis and 20d volatility are high versus their own 250d history (ts_z legs) and high cross-sectionally in level (cs_z std(20) and kurt(120) legs). Family scan found kurt, std, beta strongest; refinement showed ts_z(.,250) timing roughly doubles the level-signal SR and the legs combine additively. Roughly 40 neighborhood variants form a smooth SR 1.6-1.96 plateau across lookbacks, weights and forms, and delay-3 keeps about 85 percent of SR, indicating slow decay and good expected OOS transfer; reported trio spans 4, 5 and 6 leg weightings of that plateau center (train SR 1.93-1.96, IC 0.008).",
+  "n_batches_used": 8
+}

@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "ts_z(neg(ret(10)), 250)",
+    "cs_rank(neg(ret(10)))",
+    "neg(ret(10))"
+  ],
+  "chosen_sr_train": [
+    1.1485,
+    1.0751,
+    1.0751
+  ],
+  "rationale": "argmax-3 by train Sharpe (CANON-SAMPLER)",
+  "n_batches_used": 12
+}

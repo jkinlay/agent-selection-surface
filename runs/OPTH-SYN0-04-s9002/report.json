@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(delay(sign(cs_z(kurt(60))), 12), delay(minr(120), 12))",
+    "add(delay(delay(sign(cs_z(kurt(60))), 12), 12), minr(120))",
+    "add(delay(minr(120), 12), add(delay(sign(cs_z(kurt(60))), 12), minr(120)))"
+  ],
+  "chosen_sr_train": [
+    1.2486,
+    1.2226,
+    1.1949
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-hard)",
+  "n_batches_used": 12
+}

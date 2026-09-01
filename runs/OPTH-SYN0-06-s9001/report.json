@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "sub(std(10), mul(sub(ret(120), ma(120)), neg(logret(120))))",
+    "sub(std(10), mul(sub(ret(120), minr(5)), neg(logret(120))))",
+    "ma(120)"
+  ],
+  "chosen_sr_train": [
+    1.1913,
+    1.1642,
+    1.1614
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-hard)",
+  "n_batches_used": 12
+}

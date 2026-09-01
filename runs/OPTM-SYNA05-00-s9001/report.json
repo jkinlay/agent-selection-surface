@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "div(abs_(add(skew(60), kurt(15))), add(delay(skew(3), 19), minr(5)))",
+    "div(abs_(add(skew(60), kurt(15))), add(delay(skew(20), 19), minr(5)))",
+    "div(abs_(add(div(abs_(add(skew(60), kurt(15))), add(delay(skew(20), 19), minr(5))), kurt(15))), add(delay(skew(20), 19), minr(5)))"
+  ],
+  "chosen_sr_train": [
+    1.808,
+    1.6221,
+    1.6094
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-medium)",
+  "n_batches_used": 12
+}

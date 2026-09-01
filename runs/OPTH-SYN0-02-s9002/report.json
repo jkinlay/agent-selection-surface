@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "sub(mul(logret(120), logret(120)), sign(kurt(15)))",
+    "sub(corrm(15), sign(kurt(15)))",
+    "sub(beta(15), sign(kurt(15)))"
+  ],
+  "chosen_sr_train": [
+    1.1789,
+    1.0739,
+    1.0315
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-hard)",
+  "n_batches_used": 12
+}

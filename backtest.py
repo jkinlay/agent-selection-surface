@@ -30,11 +30,20 @@ def weights_from_signal(sig: pd.DataFrame) -> pd.DataFrame:
 
 
 def portfolio_returns(sig: pd.DataFrame, r1: pd.DataFrame) -> pd.Series:
+    """Daily portfolio return. Days before the signal is warm (all-NaN rows, i.e.
+    zero gross exposure) are returned as NaN, not 0, so that in-sample and
+    out-of-sample Sharpe are computed on the same basis: a 250-day-lookback
+    signal is not credited with ~250 days of exact zeros inside the train window."""
     w = weights_from_signal(sig).shift(LAG)
-    return (w * r1).sum(axis=1, min_count=1).fillna(0.0)
+    pr = (w * r1).sum(axis=1, min_count=1)
+    live = w.abs().sum(axis=1) > 0
+    return pr.where(live)
 
 
 def sharpe(pr: pd.Series) -> float:
+    pr = pr.dropna()
+    if len(pr) < 60:
+        return 0.0
     sd = pr.std()
     if sd == 0 or np.isnan(sd):
         return 0.0

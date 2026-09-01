@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(cs_z(logret(10)), add(add(cs_z(kurt(5)), cs_z(kurt(10))), add(cs_z(div(kurt(15), std(10))), cs_z(div(kurt(40), std(60))))))",
+    "add(cs_z(logret(10)), add(add(cs_z(kurt(5)), cs_z(div(kurt(10), std(60)))), add(cs_z(div(kurt(15), std(5))), cs_z(div(kurt(40), std(60))))))",
+    "add(cs_z(logret(10)), add(add(cs_z(kurt(3)), cs_z(kurt(10))), add(cs_z(div(kurt(15), std(5))), cs_z(div(kurt(40), std(60))))))"
+  ],
+  "chosen_sr_train": [
+    2.0548,
+    2.0571,
+    2.051
+  ],
+  "rationale": "All three are equal-weighted cross-sectional composites of a multi-lookback return-kurtosis ensemble, a 10-day momentum sleeve, and a low-volatility tilt embedded by scaling the longer kurtosis terms by trailing vol. Each ingredient was validated independently before combination: kurtosis is positively priced and sign-stable across 5,10,15,20,40 and 60 days with a smooth hump peaking near 15 and no single lucky parameter; volatility is negatively related to forward returns at all nine lookbacks tested; 10-day momentum is positive with 3 and 15 day neighbours also positive. Blending several kurtosis lookbacks raised train SR monotonically from 1.20 single-term to above 2.0, which is estimation-noise diversification rather than parameter mining. The train SR surface is a broad flat plateau with about forty parameterisations between 1.95 and 2.06, so I avoided reporting the argmax and instead chose three plateau-centre members that differ in short kurtosis lookback, vol-scaling denominator and the raw versus scaled term mix, spreading parameter-specific estimation error. Train SR 2.055, 2.057 and 2.051 with rank IC 0.0094, 0.0093 and 0.0095. Rejected: multiplicative z-score interactions near zero, time-series z-scored kurtosis which cut SR by two thirds, and long-horizon momentum, correlation or skew as a fifth sleeve which each cost 0.3 to 0.5 SR.",
+  "n_batches_used": 12
+}

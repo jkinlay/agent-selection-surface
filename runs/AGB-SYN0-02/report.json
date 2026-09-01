@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "add(cs_z(sub(ts_z(std(60), 250), ts_z(std(250), 250))), add(cs_z(delay(neg(ts_z(maxr(250), 250)), 20)), cs_z(delay(neg(ts_z(ret(250), 250)), 20))))",
+    "delay(add(cs_z(sub(ts_z(std(60), 250), ts_z(std(250), 250))), cs_z(delay(neg(ts_z(maxr(250), 250)), 20))), 5)",
+    "add(cs_z(delay(add(cs_z(sub(ts_z(std(60), 250), ts_z(std(250), 250))), cs_z(delay(neg(ts_z(maxr(250), 250)), 20))), 5)), cs_z(add(cs_z(sub(ts_z(std(60), 250), ts_z(std(250), 250))), add(cs_z(delay(neg(ts_z(maxr(250), 250)), 20)), cs_z(delay(neg(ts_z(ret(250), 250)), 20))))))"
+  ],
+  "chosen_sr_train": [
+    2.028,
+    2.1744,
+    2.2123
+  ],
+  "rationale": "All three are equal weight cs_z composites of one dominant slow factor: a volatility term structure tilt sub(ts_z(std(60),250), ts_z(std(250),250)) combined with skip recent month long horizon reversal, delay(neg(ts_z(maxr(250),250)),20) and delay(neg(ts_z(ret(250),250)),20). Train SR 2.03, 2.17 and 2.21. Chosen for persistence rather than peak train SR. Supporting evidence: four independent 250 day features (maxr, ret, ma, minr) agree in direction and magnitude under ts_z(.,250) normalization, so this is a horizon effect not a lucky expression; every weighting scheme tested lands in a narrow band, a flat optimum rather than a knife edge; and the delay profile is a broad plateau, 2.00 at lag 0, 2.17 at lag 5, 2.06 at lag 10, with the composite still earning about 1.3 even at a 40 day lag, confirming a genuinely slow low turnover factor. The one month skip was discovered empirically, the 52 week high reversal signal rises from 1.25 undelayed to 1.61 at a 20 day delay, and it matches the standard convention of skipping the recent month so short term reversal does not contaminate a long horizon signal. I excluded neg(ret(5)) despite it lifting train SR from 2.03 to 2.14, because it flips sign from +0.90 to -0.40 under a mere 5 day delay, marking it as lag sensitive, high turnover and unlikely to survive out of sample. The three reported variants span the only real free parameter, the implementation lag: an unlagged three factor safety net, a lagged two factor version, and an ensemble hedging the lag choice.",
+  "n_batches_used": 12
+}

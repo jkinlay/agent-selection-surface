@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "sub(ret(250), add(ret(120), ret(120)))",
+    "div(sub(ret(250), add(ret(120), ret(120))), std(40))",
+    "div(sub(ret(250), add(ret(120), ret(120))), std(120))"
+  ],
+  "chosen_sr_train": [
+    1.9261,
+    1.9511,
+    1.8904
+  ],
+  "rationale": "Panel exhibits a dominant cyclical mean-reversion factor with a clean break at lag 120: returns over t-250 to t-120 predict positively while returns over t-120 to t predict negatively, and the legs are additive. The compact form ret(250) minus 2x ret(120) captures both legs with equal weight (train SR 1.93, IC 0.012) and sits on a broad robustness plateau: SR 1.86-1.95 across every vol-scaling denominator, component-z and ensemble variants, and it decays gracefully under extra implementation lag. Reporting the raw form plus two vol-scaled variants (std 40 and std 120 denominators) as structurally hedged implementations of the same well-identified factor; weaker independent families (MA crossover, beta, corrm) were tested and excluded because every blend diluted portfolio Sharpe.",
+  "n_batches_used": 6
+}

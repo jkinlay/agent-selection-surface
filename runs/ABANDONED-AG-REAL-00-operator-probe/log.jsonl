@@ -1,0 +1,2 @@
+{"kind": "init", "panel": "REAL", "arm": "AGENT", "ts": "2026-09-01T06:15:49.008236+00:00"}
+{"kind": "eval_batch", "batch": 1, "note": "timing probe: harness latency check by operator, pre-run", "results": [{"expr": "neg(ret(20))", "sharpe": 0.5924, "ic": 0.00037}, {"expr": "cs_rank(std(60))", "sharpe": 0.4151, "ic": -0.02171}, {"expr": "ma(5)", "sharpe": 1.0057, "ic": 0.00601}], "ts": "2026-09-01T06:39:50.513200+00:00"}

@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "beta(3)",
+    "corrm(3)",
+    "add(corrm(20), beta(3))"
+  ],
+  "chosen_sr_train": [
+    1.2396,
+    1.2244,
+    1.1558
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-medium)",
+  "n_batches_used": 12
+}

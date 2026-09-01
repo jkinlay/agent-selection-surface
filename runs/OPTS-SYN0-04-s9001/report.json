@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "ts_z(div(minr(15), add(kurt(20), skew(10))), 250)",
+    "mul(mul(ts_z(maxr(40), 60), neg(logret(250))), maxr(120))",
+    "mul(mul(ts_z(maxr(40), 60), neg(logret(250))), maxr(15))"
+  ],
+  "chosen_sr_train": [
+    1.1647,
+    1.1319,
+    1.111
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-soft)",
+  "n_batches_used": 12
+}

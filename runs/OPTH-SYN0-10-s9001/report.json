@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "cs_rank(sub(div(neg(std(250)), ts_z(std(20), 5)), kurt(60)))",
+    "sub(div(div(neg(std(250)), ts_z(std(20), 5)), std(20)), kurt(250))",
+    "cs_rank(sub(div(neg(std(250)), cs_z(mul(minr(40), corrm(40)))), kurt(60)))"
+  ],
+  "chosen_sr_train": [
+    1.6219,
+    1.6134,
+    1.4594
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-hard)",
+  "n_batches_used": 12
+}

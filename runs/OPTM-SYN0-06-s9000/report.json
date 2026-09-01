@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "ma(120)",
+    "cs_z(ma(120))",
+    "ma(250)"
+  ],
+  "chosen_sr_train": [
+    1.1614,
+    1.1614,
+    1.1193
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-medium)",
+  "n_batches_used": 12
+}

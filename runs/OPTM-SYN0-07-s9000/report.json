@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "delay(ts_z(delay(minr(3), 17), 60), 9)",
+    "delay(ts_z(delay(logret(3), 17), 60), 9)",
+    "sign(cs_rank(add(corrm(10), logret(40))))"
+  ],
+  "chosen_sr_train": [
+    1.3941,
+    1.2764,
+    1.2688
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-medium)",
+  "n_batches_used": 12
+}

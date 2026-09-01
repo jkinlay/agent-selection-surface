@@ -1,0 +1,14 @@
+{
+  "top3_chosen": [
+    "div(abs_(ma(120)), delay(delay(std(40), 19), 16))",
+    "div(ma(40), delay(delay(std(40), 19), 16))",
+    "div(add(ma(60), abs_(ma(15))), delay(delay(std(40), 19), 16))"
+  ],
+  "chosen_sr_train": [
+    1.3523,
+    1.3227,
+    1.2344
+  ],
+  "rationale": "argmax-3 by train Sharpe (OPT-medium)",
+  "n_batches_used": 12
+}
