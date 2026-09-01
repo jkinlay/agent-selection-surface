@@ -22,7 +22,9 @@ So I built a minimal research agent, gave it one tool, recorded everything, and 
 
 ## Setup
 
-**The harness.** One command: submit up to 25 expressions, receive their in-sample scores. At most 12 such calls. The agent never sees prices, dates, tickers, or the holdout — the panel is anonymised to integer asset IDs and an integer time index, and the holdout files were physically absent from the filesystem while the runs executed. Every submission is logged with a timestamp, alongside a one-line hypothesis per batch and a free-text journal. The run ends when the agent reports exactly three signals. Books are built by equal-weighting three signals, and the pre-registered primary rule takes the three highest-scoring signals a run *evaluated* rather than the three it chose to report; the difference between the two is itself a result, and it is small. Two counts matter throughout: **N**, the trials in the log, and **k**, the number of additive legs in the resulting book — three for a searcher whose signals are single expressions, more for one whose signals are themselves sums.
+**The harness.** One command: submit up to 25 expressions, receive their in-sample scores. At most 12 such calls. The agent never sees prices, dates, tickers, or the holdout — the panel is anonymised to integer asset IDs and an integer time index, and the holdout files were physically absent from the filesystem while the runs executed. Every submission is logged with a timestamp, alongside a one-line hypothesis per batch and a free-text journal. The run ends when the agent reports exactly three signals.
+
+**What a "book" is, and the two counts that matter.** Every arm's output is scored the same way: three signals, equal-weighted into one book. The pre-registered primary rule takes the three highest-scoring signals a run *evaluated*, not the three it chose to report — the gap between the two is small and is itself reported below. **N** is the number of trials in the log. **k** is the number of additive legs in the resulting book: three for a searcher whose signals are single expressions, more for one whose signals are themselves sums. Those two integers carry the whole argument.
 
 **The signal language.** A small price-only grammar: returns, moving averages, rolling moments, range position, rolling beta and correlation to the equal-weight panel, plus cross-sectional and time-series normalisations and arithmetic. It is the grammar from the August post, which matters — it was fixed before this hypothesis existed. Each signal becomes a dollar-neutral, rank-weighted long/short book with a one-day implementation lag.
 
@@ -37,7 +39,7 @@ So I built a minimal research agent, gave it one tool, recorded everything, and 
 
 **The data.** The primary setting is synthetic: factor-structured panels with regime-switching volatility and fat tails, and **zero predictability by construction**. Volatility is forecastable; returns are not. The true Sharpe of every signal is zero, so every point of in-sample Sharpe is selection, and I can generate independent panels at will. The second setting is the real NASDAQ panel from the August post — 1,280 names, 2018–2023, train through 2021, holdout 2022 to May 2023.
 
-The analysis plan, estimators, inclusion rule and predictions were committed to git before the first agent run. The repo holds the commit history, every harness log and agent transcript, a manifest of all 227 attempted runs including the five abandoned, and a list of every deviation from the plan.
+The analysis plan, estimators, inclusion rule and predictions were committed to git before the first agent run. The repo holds the commit history, every harness log with its batch notes and research journals, a manifest of all 227 attempted runs including the five abandoned and why, and a list of every deviation from the plan.
 
 ---
 
