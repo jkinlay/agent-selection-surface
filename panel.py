@@ -30,7 +30,26 @@ def sha256(path):
     return h.hexdigest()
 
 
+SOURCE_URL = ("https://github.com/skfolio/skfolio-datasets/raw/main/"
+              "datasets/nasdaq_dataset.csv.gz")
+
+
+def fetch_source():
+    """Download the skfolio NASDAQ panel if it is not already on disk."""
+    import urllib.request
+    if os.path.exists(REAL_SRC):
+        return REAL_SRC
+    os.makedirs(os.path.dirname(REAL_SRC), exist_ok=True)
+    req = urllib.request.Request(SOURCE_URL, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=120) as r, open(REAL_SRC, "wb") as f:
+        f.write(r.read())
+    return REAL_SRC
+
+
 def prepare_real(out_dir="panels", hold_dir="holdout"):
+    fetch_source()
+    os.makedirs(out_dir, exist_ok=True)
+    os.makedirs(hold_dir, exist_ok=True)
     px = pd.read_csv(REAL_SRC, index_col=0, parse_dates=True)
     keep = px.median() >= 5.0
     px = px.loc[:, keep]
@@ -72,6 +91,8 @@ def make_syn_panels(arm: str, n: int, seed0: int, kappa_rev=0.0, kappa_anti=0.0,
     """Generate n synthetic panels for an arm; train slice to panels/, full to holdout/."""
     from gen import make_panel
 
+    os.makedirs(out_dir, exist_ok=True)
+    os.makedirs(hold_dir, exist_ok=True)
     manifest = []
     for i in range(n):
         seed = seed0 + i
@@ -84,3 +105,15 @@ def make_syn_panels(arm: str, n: int, seed0: int, kappa_rev=0.0, kappa_anti=0.0,
     with open(os.path.join(out_dir, f"{arm}.manifest.json"), "w") as f:
         json.dump(manifest, f, indent=2)
     return manifest
+
+
+if __name__ == "__main__":
+    import json as _json
+    print(_json.dumps(prepare_real(), indent=2))
+    cal = _json.load(open("calibration_targets.json"))
+    make_syn_panels("SYN0", 12, seed0=8000)
+    make_syn_panels("SYNA05", 4, seed0=8100,
+                    kappa_rev=cal["rev_0.5"]["kappa"], kappa_anti=cal["anti_0.5"]["kappa"])
+    make_syn_panels("SYNA10", 4, seed0=8200,
+                    kappa_rev=cal["rev_1.0"]["kappa"], kappa_anti=cal["anti_1.0"]["kappa"])
+    print("panels and holdouts written")

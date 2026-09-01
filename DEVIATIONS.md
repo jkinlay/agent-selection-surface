@@ -92,7 +92,22 @@ by the rate limit and re-run from scratch on the same four panels; one
 `AG-REAL-00` was contaminated by an operator timing probe before the agent
 started, and was replaced by `AG-REAL-06`. No exclusion conditions on results.
 
-## 11. `step_bridge` did not run to completion
+## 11. Expected-maximum quantities use the exact order statistic, not simulation
+
+The plan specified that all expected-max quantities be computed by simulation
+from the empirical trial process. `analyze.expected_max` instead uses the exact
+order-statistic form over the empirical null pool — E[max of n draws] =
+sum_k x_(k) [(k/m)^n - ((k-1)/m)^n] — which is the same estimand computed exactly
+rather than by Monte Carlo, and is described as such in the post. Simulation was
+dropped after an early version exhausted memory at large n.
+
+## 12. Several planned secondary outputs were not produced
+
+The 10/42-day block-bootstrap sensitivity (only the 21-day block was run), the
+Li-Ji M_eff estimator, the threshold-clustering display, and the pooled agent
+yield curve. None is referenced in the post.
+
+## 13. `step_bridge` did not run to completion
 
 The planned trial-process bridge statistics (correlation structure and score
 dispersion, synthetic versus real) fail with a linear-algebra error on some runs

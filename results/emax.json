@@ -1,45 +1,45 @@
 {
-  "SYN0": {
-    "pool_panel": "SYN0-00",
-    "pool_n": 1500,
-    "pool_max": 1.6202,
-    "agent_median_n_logged": 159.0,
-    "E_max_at_agent_N": 1.1979259259538917,
-    "E_max_at_1000": 1.5268745001321167
+  "agent_median_n_logged_primary": 146.0,
+  "E_max_single_expression_at_that_N": {
+    "mean": 1.148,
+    "se": 0.031,
+    "per_panel": [
+      1.181,
+      1.153,
+      1.043,
+      1.163,
+      0.989,
+      1.254,
+      1.188,
+      1.258,
+      1.072,
+      1.357,
+      0.973,
+      1.144
+    ]
   },
-  "REAL": {
-    "pool_panel": "REAL",
-    "pool_n": 2500,
-    "pool_max": 1.6627,
-    "agent_median_n_logged": 280.5,
-    "E_max_at_agent_N": 1.4149540942186456,
-    "E_max_at_1000": 1.553044321113555
-  },
-  "censoring_rate_by_arm": {
+  "share_of_agent_2_12": 0.542,
+  "beat_own_panel_pool_by_arm": {
     "AGENT": {
-      "censored": 27,
-      "n": 29,
-      "rate": 0.931
+      "beat": 10,
+      "n": 12
     },
     "CANON-SAMPLER": {
-      "censored": 0,
-      "n": 40,
-      "rate": 0.0
+      "beat": 0,
+      "n": 24
     },
     "OPT-hard": {
-      "censored": 13,
-      "n": 36,
-      "rate": 0.361
+      "beat": 13,
+      "n": 36
     },
     "OPT-medium": {
-      "censored": 21,
-      "n": 60,
-      "rate": 0.35
+      "beat": 11,
+      "n": 36
     },
     "OPT-soft": {
-      "censored": 4,
-      "n": 36,
-      "rate": 0.111
+      "beat": 4,
+      "n": 36
     }
-  }
+  },
+  "note": "Exact order statistic over each panel's empirical random-expression pool (harness basis)."
 }

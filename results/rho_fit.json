@@ -1,0 +1,42 @@
+{
+  "kmax12_N25": {
+    "rho": 0.828,
+    "ceiling": 1.1
+  },
+  "kmax12_N50": {
+    "rho": 0.57,
+    "ceiling": 1.32
+  },
+  "kmax12_N100": {
+    "rho": 0.47,
+    "ceiling": 1.46
+  },
+  "kmax12_N200": {
+    "rho": 0.43,
+    "ceiling": 1.52
+  },
+  "kmax12_N400": {
+    "rho": 0.406,
+    "ceiling": 1.57
+  },
+  "kmax20_N25": {
+    "rho": 0.988,
+    "ceiling": 1.01
+  },
+  "kmax20_N50": {
+    "rho": 0.646,
+    "ceiling": 1.24
+  },
+  "kmax20_N100": {
+    "rho": 0.498,
+    "ceiling": 1.42
+  },
+  "kmax20_N200": {
+    "rho": 0.436,
+    "ceiling": 1.51
+  },
+  "kmax20_N400": {
+    "rho": 0.396,
+    "ceiling": 1.59
+  }
+}
