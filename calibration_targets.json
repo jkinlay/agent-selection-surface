@@ -1,0 +1,22 @@
+{
+  "rev_0.5": {
+    "kappa": 5.602e-05,
+    "verified_sr_mean": 0.553,
+    "verified_sr_se": 0.18
+  },
+  "rev_1.0": {
+    "kappa": 0.00011204,
+    "verified_sr_mean": 0.923,
+    "verified_sr_se": 0.181
+  },
+  "anti_0.5": {
+    "kappa": 6.64e-05,
+    "verified_sr_mean": 0.651,
+    "verified_sr_se": 0.097
+  },
+  "anti_1.0": {
+    "kappa": 0.00011469,
+    "verified_sr_mean": 1.122,
+    "verified_sr_se": 0.1
+  }
+}

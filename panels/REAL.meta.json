@@ -1,0 +1,15 @@
+{
+  "source": "skfolio nasdaq_dataset (github.com/skfolio/skfolio-datasets)",
+  "source_sha256": "92e507b787d77367ef595f55de2920792b088c19dcad16609e85d23c9c5a1fd8",
+  "names_total": 1455,
+  "names_kept": 1280,
+  "filter": "median adjusted close >= $5",
+  "dates": [
+    "2018-01-02",
+    "2023-05-31"
+  ],
+  "train_len_days": 1008,
+  "oos_len_days": 354,
+  "train_end": "2021-12-31",
+  "note": "panels/REAL.npz is train-only, values-only, integer-indexed (no dates/tickers)"
+}
